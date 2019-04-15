@@ -1,6 +1,5 @@
 (ns kaocha-nrepl.core
-  (:require [clojure.set :as set]
-            [clojure.string :as str]
+  (:require [clojure.string :as str]
             [kaocha.plugin :as p]
             [kaocha.repl :as kaocha]
             [kaocha.result :as result]
@@ -12,36 +11,13 @@
 
 (def current-report (atom nil))
 
-(defn report-reset! []
-  (reset! current-report {:summary {:ns 0 :var 0 :test 0 :pass 0 :fail 0 :error 0}
-                          :results {}
-                          :testing-ns nil
-                          ;;:gen-input nil
-                          }))
+(defn reset-report! []
+  (reset! current-report
+          {:summary {:ns 0 :var 0 :test 0 :pass 0 :fail 0 :error 0}
+           :results {}
+           :testing-ns nil}))
 
-(defn- testing-var-names [test-plan]
-  (->> test-plan
-       :kaocha.test-plan/tests
-       (mapcat :kaocha.test-plan/tests)
-       (mapcat :kaocha.test-plan/tests)
-       (map :kaocha.var/name)))
-
-(comment
-  {:results {:ns-name {:test-name [
-                                   {:type "fail"
-                                    :file ""
-                                    :line 123
-                                    :expected ""
-                                    :actual ""
-                                    :context ""
-                                    :var ""
-                                    :error ""
-                                    :diffs []
-                                    }
-                                   ]}}}
-  )
-
-(defn- send! [msg m]
+(defn- send! [m msg]
   (transport/send (:transport msg) (response-for msg m)))
 
 (defn errors [testables]
@@ -56,50 +32,72 @@
                        testable-meta (:kaocha.testable/meta testable)
                        ns-name (str (:ns testable-meta))
                        test-name  (str (:name testable-meta))
-                       res (-> (select-keys m [:type :line :testing-contexts :expected :actual])
-                               (set/rename-keys {:testing-contexts :context})
-                               (update :context #(str/join " " %))
-                               (update :type name)
-                               (assoc :file (:file testable-meta)
-                                      :var (str (:kaocha.var/name testable))))]
+                       res {:type (-> m :type name)
+                            :line (:line m)
+                            :context (->> m :testing-contexts (str/join " "))
+                            :expected (-> m :expected str)
+                            :actual (-> m :actual str)
+                            :file (:file testable-meta)
+                            :var (-> testable :kaocha.var/name str)}]
                    (update-in acc [ns-name test-name]
                               #(conj (or % []) res)))) {})))
 
-(p/defplugin kaocha-nrepl/plugin
-  (pre-test [test test-plan]
-            (when *msg*
-              (send! *msg* {:out (format "Testing: %s"
-                                         (str/join ", " (testing-var-names test-plan)))}))
-            test)
-  (post-run [result]
-            (when-let [tests (:kaocha.result/tests result)]
-              (let [summary (-> tests result/totals result/totals->clojure-test-summary)]
-                (->> tests
-                     errors
-                     ; (mapcat :kaocha.result/tests)
-                     ; (mapcat :kaocha.result/tests)
-                     ; (remove :kaocha.testable/skip)
-                     ; (mapcat :kaocha.testable/events)
-                     ; (filter #(#{:fail} (:type %)))
-                     ; (map #(dissoc % :kaocha/test-plan))
-                     clojure.pprint/pprint)))
+(defn totals [testable]
+  (let [res (-> testable
+                result/totals
+                result/totals->clojure-test-summary)
+        ns-count (->> testable
+                      (mapcat :kaocha.result/tests)
+                      (remove :kaocha.testable/skip)
+                      (filter #(= :kaocha.type/ns (:kaocha.testable/type %)))
+                      count)]
+    (-> res
+        (assoc :var (+ (:pass res) (:fail res) (:error res))
+               :ns ns-count)
+        (select-keys [:ns :var :test :pass :fail :error]))))
 
-            result))
+(defn testing-ns [testable]
+  (->> testable
+       (mapcat :kaocha.result/tests)
+       (remove :kaocha.testable/skip)
+       (filter #(= :kaocha.type/ns (:kaocha.testable/type %)))
+       (map (comp str :kaocha.ns/name))
+       (str/join ", ")))
+
+(p/defplugin kaocha-nrepl/plugin
+  (post-run
+   [result]
+   (when-let [testable (:kaocha.result/tests result)]
+     (reset! current-report
+             {:results (errors testable)
+              :summary (totals testable)
+              :testing-ns (testing-ns testable)}))
+   result))
 
 (comment
-  (def x (kaocha/run 'kaocha-nrepl.core-test/dummy-test
-                     kaocha-config)))
+  (kaocha/run 'kaocha-nrepl-dev.success-test
+              'kaocha-nrepl-dev.fail-test
+              (assoc default-kaocha-config
+                     :config-file "dev/config.edn")))
 
-(def ^:private kaocha-config
-  {:kaocha/plugins [:kaocha-nrepl/plugin]})
+(def ^:private default-kaocha-config
+  {:kaocha/plugins [:kaocha-nrepl/plugin]
+   :kaocha/reporter []})
+
+(defn kaocha-run [& args]
+  (reset-report!)
+  (doall (apply kaocha/run args))
+  @current-report)
 
 (defn- test-ns-reply [msg]
   (binding [*msg* msg]
-    (let [ns-sym (symbol (:ns msg))
-          result (->> (kaocha/run ns-sym kaocha-config)
-                      (map (fn [[k v]] [(name k) v]))
-                      (into {}))]
-      (send! msg (merge result {:status :done})))))
+    (let [{:keys [config-file]} msg
+          ns-sym (symbol (:ns msg))
+          config (cond-> default-kaocha-config
+                   config-file (assoc :config-file config-file))]
+      (-> (kaocha-run ns-sym config)
+          (merge {:status :done})
+          (send! msg)))))
 
 (defn wrap-kaocha [handler]
   (fn [{:keys [op] :as msg}]
@@ -107,8 +105,7 @@
       ;;"kaocha-test-all" nil
       "kaocha-test-ns" (test-ns-reply msg)
       ;;"kaocha-test" nil
-      (handler msg)
-      )))
+      (handler msg))))
 
 (when (resolve 'set-descriptor!)
   (set-descriptor!
@@ -117,19 +114,13 @@
     :requires #{} ; descriptors required by this descriptor
     :handles {"kaocha-test-all"
               {:doc "Sample nREPL middleware"
-               :requires {}
-               ;;:returns {"hello" "world" "status" "done"}
-               }
+               :requires {}}
 
               "kaocha-test-ns"
               {:doc "Sample nREPL middleware"
                :requires {"ns" "test target namespace"}
-               ;;:returns {"hello" "world" "status" "done"}
-               }
+               :optional {"config-file" "kaocha configuration file"}}
 
               "kaocha-test"
               {:doc "Sample nREPL middleware"
-               :requires {}
-               ;;:returns {"hello" "world" "status" "done"}
-               }
-              }}))
+               :requires {}}}}))
