@@ -1,0 +1,2701 @@
+{
+ :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+ :kaocha.result/tests
+ [{:kaocha.plugin.randomize/sort-key -1099370431
+   :kaocha/test-paths ["dev/test"]
+   :kaocha/ns-patterns ["-test$"]
+   :kaocha.testable/events
+   ({:file
+     "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+     :line 83
+     :kaocha/testable
+     {:kaocha.test-plan/tests
+      ({:kaocha.testable/type :kaocha.type/ns
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+        :kaocha.testable/meta nil
+        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+        :kaocha.test-plan/tests
+        ({:kaocha.var/test
+          kaocha-nrepl-dev.fail-test/fn--29289
+          :kaocha.plugin.randomize/sort-key -1460911827
+          :kaocha.testable/meta
+          {:test kaocha-nrepl-dev.fail-test/fn--29289
+           :line 4
+           :column 1
+           :file "kaocha_nrepl_dev/fail_test.clj"
+           :name test3
+           :ns kaocha-nrepl-dev.fail-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+          :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+          :kaocha.testable/desc "test3"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+         {:kaocha.var/test
+          kaocha-nrepl-dev.fail-test/fn--29293
+          :kaocha.plugin.randomize/sort-key 1404457224
+          :kaocha.testable/meta
+          {:test kaocha-nrepl-dev.fail-test/fn--29293
+           :line 7
+           :column 1
+           :file "kaocha_nrepl_dev/fail_test.clj"
+           :name test4
+           :ns kaocha-nrepl-dev.fail-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+          :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+          :kaocha.testable/desc "test4"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+        :kaocha.plugin.randomize/sort-key -132964057}
+       {:kaocha.test-plan/tests
+        ({:kaocha.var/test
+          kaocha-nrepl-dev.success-test/fn--29317
+          :kaocha.plugin.randomize/sort-key 491853686
+          :kaocha.testable/meta
+          {:test kaocha-nrepl-dev.success-test/fn--29317
+           :line 7
+           :column 1
+           :file "kaocha_nrepl_dev/success_test.clj"
+           :name test2
+           :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+          :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+          :kaocha.testable/desc "test2"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+         {:kaocha.var/test
+          kaocha-nrepl-dev.success-test/fn--29313
+          :kaocha.plugin.randomize/sort-key 1886789092
+          :kaocha.testable/meta
+          {:test kaocha-nrepl-dev.success-test/fn--29313
+           :line 4
+           :column 1
+           :file "kaocha_nrepl_dev/success_test.clj"
+           :name test1
+           :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+          :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+          :kaocha.testable/desc "test1"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})
+        :kaocha.plugin.randomize/sort-key 1089284813
+        :kaocha.testable/skip true
+        :kaocha.testable/meta nil
+        :kaocha.testable/type :kaocha.type/ns
+        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+        :kaocha.ns/name kaocha-nrepl-dev.success-test
+        :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+      :kaocha.plugin.randomize/sort-key -1099370431
+      :kaocha/test-paths ["dev/test"]
+      :kaocha/ns-patterns ["-test$"]
+      :kaocha.filter/skip-meta [:kaocha/skip]
+      :kaocha.testable/type :kaocha.type/clojure.test
+      :kaocha/source-paths ["src"]
+      :kaocha.testable/desc "unit (clojure.test)"
+      :kaocha.testable/id :unit}
+     :kaocha/test-plan
+     {:kaocha.test-plan/tests
+      ({:kaocha.test-plan/tests
+        ({:kaocha.testable/type :kaocha.type/ns
+          :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+          :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+          :kaocha.ns/name kaocha-nrepl-dev.fail-test
+          :kaocha.testable/meta nil
+          :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+          :kaocha.test-plan/tests
+          ({:kaocha.var/test
+            kaocha-nrepl-dev.fail-test/fn--29289
+            :kaocha.plugin.randomize/sort-key -1460911827
+            :kaocha.testable/meta
+            {:test kaocha-nrepl-dev.fail-test/fn--29289
+             :line 4
+             :column 1
+             :file "kaocha_nrepl_dev/fail_test.clj"
+             :name test3
+             :ns kaocha-nrepl-dev.fail-test}
+            :kaocha.testable/type :kaocha.type/var
+            :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+            :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+            :kaocha.testable/desc "test3"
+            :kaocha.testable/wrap []
+            :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+           {:kaocha.var/test
+            kaocha-nrepl-dev.fail-test/fn--29293
+            :kaocha.plugin.randomize/sort-key 1404457224
+            :kaocha.testable/meta
+            {:test kaocha-nrepl-dev.fail-test/fn--29293
+             :line 7
+             :column 1
+             :file "kaocha_nrepl_dev/fail_test.clj"
+             :name test4
+             :ns kaocha-nrepl-dev.fail-test}
+            :kaocha.testable/type :kaocha.type/var
+            :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+            :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+            :kaocha.testable/desc "test4"
+            :kaocha.testable/wrap []
+            :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+          :kaocha.plugin.randomize/sort-key -132964057}
+         {:kaocha.test-plan/tests
+          ({:kaocha.var/test
+            kaocha-nrepl-dev.success-test/fn--29317
+            :kaocha.plugin.randomize/sort-key 491853686
+            :kaocha.testable/meta
+            {:test kaocha-nrepl-dev.success-test/fn--29317
+             :line 7
+             :column 1
+             :file "kaocha_nrepl_dev/success_test.clj"
+             :name test2
+             :ns kaocha-nrepl-dev.success-test}
+            :kaocha.testable/type :kaocha.type/var
+            :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+            :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+            :kaocha.testable/desc "test2"
+            :kaocha.testable/wrap []
+            :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+           {:kaocha.var/test
+            kaocha-nrepl-dev.success-test/fn--29313
+            :kaocha.plugin.randomize/sort-key 1886789092
+            :kaocha.testable/meta
+            {:test kaocha-nrepl-dev.success-test/fn--29313
+             :line 4
+             :column 1
+             :file "kaocha_nrepl_dev/success_test.clj"
+             :name test1
+             :ns kaocha-nrepl-dev.success-test}
+            :kaocha.testable/type :kaocha.type/var
+            :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+            :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+            :kaocha.testable/desc "test1"
+            :kaocha.testable/wrap []
+            :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})
+          :kaocha.plugin.randomize/sort-key 1089284813
+          :kaocha.testable/skip true
+          :kaocha.testable/meta nil
+          :kaocha.testable/type :kaocha.type/ns
+          :kaocha.ns/ns kaocha-nrepl-dev.success-test
+          :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+          :kaocha.ns/name kaocha-nrepl-dev.success-test
+          :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+        :kaocha.plugin.randomize/sort-key -1099370431
+        :kaocha/test-paths ["dev/test"]
+        :kaocha/ns-patterns ["-test$"]
+        :kaocha.filter/skip-meta [:kaocha/skip]
+        :kaocha.testable/type :kaocha.type/clojure.test
+        :kaocha/source-paths ["src"]
+        :kaocha.testable/desc "unit (clojure.test)"
+        :kaocha.testable/id :unit})
+      :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+      :kaocha.plugin.randomize/seed 67765668
+      }
+:type :begin-test-suite}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.plugin.randomize/sort-key -1099370431
+  :kaocha/test-paths ["dev/test"]
+  :kaocha/ns-patterns ["-test$"]
+  :kaocha.result/tests
+  [{:kaocha.plugin.randomize/sort-key -132964057
+    :kaocha.testable/events
+    ({:file
+      "/Users/iizuka/
+      src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+      :line 83
+      :kaocha/testable
+      {:kaocha.testable/type :kaocha.type/ns
+       :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+       :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+       :kaocha.ns/name kaocha-nrepl-dev.fail-test
+       :kaocha.testable/meta nil
+       :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+       :kaocha.test-plan/tests
+       ({:kaocha.var/test
+         kaocha-nrepl-dev.fail-test/fn--29289
+         :kaocha.plugin.randomize/sort-key -1460911827
+         :kaocha.testable/meta
+         {:test kaocha-nrepl-dev.fail-test/fn--29289
+          :line 4
+          :column 1
+          :file "kaocha_nrepl_dev/fail_test.clj"
+          :name test3
+          :ns kaocha-nrepl-dev.fail-test}
+         :kaocha.testable/type :kaocha.type/var
+         :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+         :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+         :kaocha.testable/desc "test3"
+         :kaocha.testable/wrap []
+         :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+        {:kaocha.var/test
+         kaocha-nrepl-dev.fail-test/fn--29293
+         :kaocha.plugin.randomize/sort-key 1404457224
+         :kaocha.testable/meta
+         {:test kaocha-nrepl-dev.fail-test/fn--29293
+          :line 7
+          :column 1
+          :file "kaocha_nrepl_dev/fail_test.clj"
+          :name test4
+          :ns kaocha-nrepl-dev.fail-test}
+         :kaocha.testable/type :kaocha.type/var
+         :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+         :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+         :kaocha.testable/desc "test4"
+         :kaocha.testable/wrap []
+         :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+       :kaocha.plugin.randomize/sort-key -132964057}
+      :kaocha/test-plan
+      {:kaocha.test-plan/tests
+       ({:kaocha.test-plan/tests
+         ({:kaocha.testable/type :kaocha.type/ns
+           :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+           :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+           :kaocha.ns/name kaocha-nrepl-dev.fail-test
+           :kaocha.testable/meta nil
+           :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+           :kaocha.test-plan/tests
+           ({:kaocha.var/test
+             kaocha-nrepl-dev.fail-test/fn--29289
+             :kaocha.plugin.randomize/sort-key -1460911827
+             :kaocha.testable/meta
+             {:test
+              kaocha-nrepl-dev.fail-test/fn--29289
+              :line 4
+              :column 1
+              :file "kaocha_nrepl_dev/fail_test.clj"
+              :name test3
+              :ns kaocha-nrepl-dev.fail-test}
+             :kaocha.testable/type :kaocha.type/var
+             :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+             :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+             :kaocha.testable/desc "test3"
+             :kaocha.testable/wrap []
+             :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+            {:kaocha.var/test
+             kaocha-nrepl-dev.fail-test/fn--29293
+             :kaocha.plugin.randomize/sort-key 1404457224
+             :kaocha.testable/meta
+             {:test
+              kaocha-nrepl-dev.fail-test/fn--29293
+              :line 7
+              :column 1
+              :file "kaocha_nrepl_dev/fail_test.clj"
+              :name test4
+              :ns kaocha-nrepl-dev.fail-test}
+             :kaocha.testable/type :kaocha.type/var
+             :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+             :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+             :kaocha.testable/desc "test4"
+             :kaocha.testable/wrap []
+             :kaocha.testable/id
+             :kaocha-nrepl-dev.fail-test/test4})
+           :kaocha.plugin.randomize/sort-key -132964057}
+          {:kaocha.test-plan/tests
+           ({:kaocha.var/test
+             kaocha-nrepl-dev.success-test/fn--29317
+             :kaocha.plugin.randomize/sort-key 491853686
+             :kaocha.testable/meta
+             {:test
+              kaocha-nrepl-dev.success-test/fn--29317
+              :line 7
+              :column 1
+              :file "kaocha_nrepl_dev/success_test.clj"
+              :name test2
+              :ns kaocha-nrepl-dev.success-test}
+             :kaocha.testable/type :kaocha.type/var
+             :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+             :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+             :kaocha.testable/desc "test2"
+             :kaocha.testable/wrap []
+             :kaocha.testable/id
+             :kaocha-nrepl-dev.success-test/test2}
+            {:kaocha.var/test
+             kaocha-nrepl-dev.success-test/fn--29313
+             :kaocha.plugin.randomize/sort-key 1886789092
+             :kaocha.testable/meta
+             {:test
+              kaocha-nrepl-dev.success-test/fn--29313
+              :line 4
+              :column 1
+              :file "kaocha_nrepl_dev/success_test.clj"
+              :name test1
+              :ns kaocha-nrepl-dev.success-test}
+             :kaocha.testable/type :kaocha.type/var
+             :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+             :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+             :kaocha.testable/desc "test1"
+             :kaocha.testable/wrap []
+             :kaocha.testable/id
+             :kaocha-nrepl-dev.success-test/test1})
+           :kaocha.plugin.randomize/sort-key 1089284813
+           :kaocha.testable/skip true
+           :kaocha.testable/meta nil
+           :kaocha.testable/type :kaocha.type/ns
+           :kaocha.ns/ns kaocha-nrepl-dev.success-test
+           :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+           :kaocha.ns/name kaocha-nrepl-dev.success-test
+           :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+         :kaocha.plugin.randomize/sort-key -1099370431
+         :kaocha/test-paths ["dev/test"]
+         :kaocha/ns-patterns ["-test$"]
+         :kaocha.filter/skip-meta [:kaocha/skip]
+         :kaocha.testable/type :kaocha.type/clojure.test
+         :kaocha/source-paths ["src"]
+         :kaocha.testable/desc "unit (clojure.test)"
+         :kaocha.testable/id :unit})
+       :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+       :kaocha.plugin.randomize/seed 67765668
+       }
+:ns kaocha-nrepl-dev.fail-test
+:type :begin-test-ns}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.testable/type :kaocha.type/ns
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+  :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+  :kaocha.ns/name kaocha-nrepl-dev.fail-test
+  :kaocha.testable/meta nil
+  :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+  :kaocha.test-plan/tests
+  ({:kaocha.var/test
+    kaocha-nrepl-dev.fail-test/fn--29289
+    :kaocha.plugin.randomize/sort-key -1460911827
+    :kaocha.testable/meta
+    {:test kaocha-nrepl-dev.fail-test/fn--29289
+     :line 4
+     :column 1
+     :file "kaocha_nrepl_dev/fail_test.clj"
+     :name test3
+     :ns kaocha-nrepl-dev.fail-test}
+    :kaocha.testable/type :kaocha.type/var
+    :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+    :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+    :kaocha.testable/desc "test3"
+    :kaocha.testable/wrap []
+    :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+   {:kaocha.var/test
+    kaocha-nrepl-dev.fail-test/fn--29293
+    :kaocha.plugin.randomize/sort-key 1404457224
+    :kaocha.testable/meta
+    {:test kaocha-nrepl-dev.fail-test/fn--29293
+     :line 7
+     :column 1
+     :file "kaocha_nrepl_dev/fail_test.clj"
+     :name test4
+     :ns kaocha-nrepl-dev.fail-test}
+    :kaocha.testable/type :kaocha.type/var
+    :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+    :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+    :kaocha.testable/desc "test4"
+    :kaocha.testable/wrap []
+    :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+  :kaocha.plugin.randomize/sort-key -132964057}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+    :kaocha.filter/skip-meta [:kaocha/skip]
+    :kaocha.testable/type :kaocha.type/clojure.test
+    :kaocha/source-paths ["src"]
+    :kaocha.testable/desc "unit (clojure.test)"
+    :kaocha.testable/id :unit})
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+}
+:ns kaocha-nrepl-dev.fail-test
+:type :end-test-ns})
+:kaocha.testable/meta nil
+:kaocha.result/tests
+[{:kaocha.result/error 0
+  :kaocha.result/pending 0
+  :kaocha.result/pass 0
+  :kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29289
+  :kaocha.plugin.randomize/sort-key -1460911827
+  :kaocha.testable/events
+  ({:file
+    "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+    :line 83
+    :kaocha/testable
+    {:kaocha.var/test
+     kaocha-nrepl-dev.fail-test/fn--29289
+     :kaocha.plugin.randomize/sort-key -1460911827
+     :kaocha.testable/meta
+     {:test kaocha-nrepl-dev.fail-test/fn--29289
+      :line 4
+      :column 1
+      :file "kaocha_nrepl_dev/fail_test.clj"
+      :name test3
+      :ns kaocha-nrepl-dev.fail-test}
+     :kaocha.testable/type :kaocha.type/var
+     :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+     :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+     :kaocha.testable/desc "test3"
+     :kaocha.testable/wrap []
+     :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+    :kaocha/test-plan
+    {:kaocha.test-plan/tests
+     ({:kaocha.test-plan/tests
+       ({:kaocha.testable/type :kaocha.type/ns
+         :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+         :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+         :kaocha.ns/name kaocha-nrepl-dev.fail-test
+         :kaocha.testable/meta nil
+         :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+         :kaocha.test-plan/tests
+         ({:kaocha.var/test
+           kaocha-nrepl-dev.fail-test/fn--29289
+           :kaocha.plugin.randomize/sort-key -1460911827
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.fail-test/fn--29289
+            :line 4
+            :column 1
+            :file "kaocha_nrepl_dev/fail_test.clj"
+            :name test3
+            :ns kaocha-nrepl-dev.fail-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+           :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+           :kaocha.testable/desc "test3"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.fail-test/test3}
+          {:kaocha.var/test
+           kaocha-nrepl-dev.fail-test/fn--29293
+           :kaocha.plugin.randomize/sort-key 1404457224
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.fail-test/fn--29293
+            :line 7
+            :column 1
+            :file "kaocha_nrepl_dev/fail_test.clj"
+            :name test4
+            :ns kaocha-nrepl-dev.fail-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+           :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+           :kaocha.testable/desc "test4"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.fail-test/test4})
+         :kaocha.plugin.randomize/sort-key -132964057}
+        {:kaocha.test-plan/tests
+         ({:kaocha.var/test
+           kaocha-nrepl-dev.success-test/fn--29317
+           :kaocha.plugin.randomize/sort-key 491853686
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.success-test/fn--29317
+            :line 7
+            :column 1
+            :file "kaocha_nrepl_dev/success_test.clj"
+            :name test2
+            :ns kaocha-nrepl-dev.success-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name
+           kaocha-nrepl-dev.success-test/test2
+           :kaocha.var/var
+           kaocha-nrepl-dev.success-test/test2
+           :kaocha.testable/desc "test2"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.success-test/test2}
+          {:kaocha.var/test
+           kaocha-nrepl-dev.success-test/fn--29313
+           :kaocha.plugin.randomize/sort-key 1886789092
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.success-test/fn--29313
+            :line 4
+            :column 1
+            :file "kaocha_nrepl_dev/success_test.clj"
+            :name test1
+            :ns kaocha-nrepl-dev.success-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name
+           kaocha-nrepl-dev.success-test/test1
+           :kaocha.var/var
+           kaocha-nrepl-dev.success-test/test1
+           :kaocha.testable/desc "test1"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.success-test/test1})
+         :kaocha.plugin.randomize/sort-key 1089284813
+         :kaocha.testable/skip true
+         :kaocha.testable/meta nil
+         :kaocha.testable/type :kaocha.type/ns
+         :kaocha.ns/ns
+         kaocha-nrepl-dev.success-test
+         :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+         :kaocha.ns/name kaocha-nrepl-dev.success-test
+         :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+       :kaocha.plugin.randomize/sort-key -1099370431
+       :kaocha/test-paths ["dev/test"]
+       :kaocha/ns-patterns ["-test$"]
+       :kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit})
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+}
+:type :begin-test-var
+:var kaocha-nrepl-dev.fail-test/test3}
+{:testing-vars (kaocha-nrepl-dev.fail-test/test3)
+ :testing-contexts ()
+ :file "fail_test.clj"
+ :type :fail
+ :line 5
+ :expected false
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29289
+  :kaocha.plugin.randomize/sort-key -1460911827
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29289
+   :line 4
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test3
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+  :kaocha.testable/desc "test3"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns
+      kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+:kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit})
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+}
+:actual false
+:message nil}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29289
+  :kaocha.plugin.randomize/sort-key -1460911827
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29289
+   :line 4
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test3
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+  :kaocha.testable/desc "test3"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns
+      kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+    :kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit})
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+}
+:type :end-test-var
+:var kaocha-nrepl-dev.fail-test/test3})
+:kaocha.testable/meta
+{:test kaocha-nrepl-dev.fail-test/fn--29289
+ :line 4
+ :column 1
+ :file "kaocha_nrepl_dev/fail_test.clj"
+ :name test3
+ :ns kaocha-nrepl-dev.fail-test}
+:kaocha.result/count 1
+:kaocha.testable/type :kaocha.type/var
+:kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+:kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+:kaocha.testable/desc "test3"
+:kaocha.testable/wrap []
+:kaocha.result/fail 1
+:kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+{:kaocha.result/error 0
+ :kaocha.result/pending 0
+ :kaocha.result/pass 0
+ :kaocha.var/test
+ kaocha-nrepl-dev.fail-test/fn--29293
+ :kaocha.plugin.randomize/sort-key 1404457224
+ :kaocha.testable/events
+ ({:file
+   "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+   :line 83
+   :kaocha/testable
+   {:kaocha.var/test
+    kaocha-nrepl-dev.fail-test/fn--29293
+    :kaocha.plugin.randomize/sort-key 1404457224
+    :kaocha.testable/meta
+    {:test kaocha-nrepl-dev.fail-test/fn--29293
+     :line 7
+     :column 1
+     :file "kaocha_nrepl_dev/fail_test.clj"
+     :name test4
+     :ns kaocha-nrepl-dev.fail-test}
+    :kaocha.testable/type :kaocha.type/var
+    :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+    :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+    :kaocha.testable/desc "test4"
+    :kaocha.testable/wrap []
+    :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}
+   :kaocha/test-plan
+   {:kaocha.test-plan/tests
+    ({:kaocha.test-plan/tests
+      ({:kaocha.testable/type :kaocha.type/ns
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+        :kaocha.testable/meta nil
+        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+        :kaocha.test-plan/tests
+        ({:kaocha.var/test
+          kaocha-nrepl-dev.fail-test/fn--29289
+          :kaocha.plugin.randomize/sort-key -1460911827
+          :kaocha.testable/meta
+          {:test
+           kaocha-nrepl-dev.fail-test/fn--29289
+           :line 4
+           :column 1
+           :file "kaocha_nrepl_dev/fail_test.clj"
+           :name test3
+           :ns kaocha-nrepl-dev.fail-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+          :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+          :kaocha.testable/desc "test3"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.fail-test/test3}
+         {:kaocha.var/test
+          kaocha-nrepl-dev.fail-test/fn--29293
+          :kaocha.plugin.randomize/sort-key 1404457224
+          :kaocha.testable/meta
+          {:test
+           kaocha-nrepl-dev.fail-test/fn--29293
+           :line 7
+           :column 1
+           :file "kaocha_nrepl_dev/fail_test.clj"
+           :name test4
+           :ns kaocha-nrepl-dev.fail-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+          :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+          :kaocha.testable/desc "test4"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.fail-test/test4})
+        :kaocha.plugin.randomize/sort-key -132964057}
+       {:kaocha.test-plan/tests
+        ({:kaocha.var/test
+          kaocha-nrepl-dev.success-test/fn--29317
+          :kaocha.plugin.randomize/sort-key 491853686
+          :kaocha.testable/meta
+          {:test
+           kaocha-nrepl-dev.success-test/fn--29317
+           :line 7
+           :column 1
+           :file "kaocha_nrepl_dev/success_test.clj"
+           :name test2
+           :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name
+          kaocha-nrepl-dev.success-test/test2
+          :kaocha.var/var
+          kaocha-nrepl-dev.success-test/test2
+          :kaocha.testable/desc "test2"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.success-test/test2}
+         {:kaocha.var/test
+          kaocha-nrepl-dev.success-test/fn--29313
+          :kaocha.plugin.randomize/sort-key 1886789092
+          :kaocha.testable/meta
+          {:test
+           kaocha-nrepl-dev.success-test/fn--29313
+           :line 4
+           :column 1
+           :file "kaocha_nrepl_dev/success_test.clj"
+           :name test1
+           :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name
+          kaocha-nrepl-dev.success-test/test1
+          :kaocha.var/var
+          kaocha-nrepl-dev.success-test/test1
+          :kaocha.testable/desc "test1"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.success-test/test1})
+        :kaocha.plugin.randomize/sort-key 1089284813
+        :kaocha.testable/skip true
+        :kaocha.testable/meta nil
+        :kaocha.testable/type :kaocha.type/ns
+        :kaocha.ns/ns
+        kaocha-nrepl-dev.success-test
+        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+        :kaocha.ns/name kaocha-nrepl-dev.success-test
+        :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+      :kaocha.plugin.randomize/sort-key -1099370431
+      :kaocha/test-paths ["dev/test"]
+      :kaocha/ns-patterns ["-test$"]
+
+:kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit})
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+
+}
+:type :begin-test-var
+:var kaocha-nrepl-dev.fail-test/test4}
+{:testing-vars (kaocha-nrepl-dev.fail-test/test4)
+ :testing-contexts ("context4")
+ :file "fail_test.clj"
+ :type :fail
+ :diffs (["bar" ["foo" "bar" nil]])
+ :line 9
+ :expected "foo"
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29293
+  :kaocha.plugin.randomize/sort-key 1404457224
+  :kaocha.testable/meta
+
+  {:test kaocha-nrepl-dev.fail-test/fn--29293
+   :line 7
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test4
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+  :kaocha.testable/desc "test4"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns
+      kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit})
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+
+:kaocha.plugin.randomize/seed 67765668
+
+
+}
+:actual ("bar")
+:message nil}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29293
+  :kaocha.plugin.randomize/sort-key 1404457224
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29293
+   :line 7
+
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test4
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+  :kaocha.testable/desc "test4"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests ({:kaocha.var/test
+                                kaocha-nrepl-dev.fail-test/fn--29289
+                                :kaocha.plugin.randomize/sort-key -1460911827
+                                :kaocha.testable/meta
+                                {:test
+                                 kaocha-nrepl-dev.fail-test/fn--29289
+                                 :line 4
+                                 :column 1
+                                 :file "kaocha_nrepl_dev/fail_test.clj"
+                                 :name test3
+                                 :ns kaocha-nrepl-dev.fail-test}
+                                :kaocha.testable/type :kaocha.type/var
+                                :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                :kaocha.testable/desc "test3"
+                                :kaocha.testable/wrap []
+                                :kaocha.testable/id
+                                :kaocha-nrepl-dev.fail-test/test3}
+                               {:kaocha.var/test
+                                kaocha-nrepl-dev.fail-test/fn--29293
+                                :kaocha.plugin.randomize/sort-key 1404457224
+                                :kaocha.testable/meta
+                                {:test
+                                 kaocha-nrepl-dev.fail-test/fn--29293
+                                 :line 7
+                                 :column 1
+                                 :file "kaocha_nrepl_dev/fail_test.clj"
+                                 :name test4
+                                 :ns kaocha-nrepl-dev.fail-test}
+                                :kaocha.testable/type :kaocha.type/var
+                                :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                :kaocha.testable/desc "test4"
+                                :kaocha.testable/wrap []
+                                :kaocha.testable/id
+                                :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var
+        kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns
+
+      kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit})
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:type :end-test-var
+:var kaocha-nrepl-dev.fail-test/test4})
+:kaocha.testable/meta
+{:test kaocha-nrepl-dev.fail-test/fn--29293
+ :line 7
+ :column 1
+ :file "kaocha_nrepl_dev/fail_test.clj"
+ :name test4
+ :ns kaocha-nrepl-dev.fail-test}
+:kaocha.result/count 1
+:kaocha.testable/type :kaocha.type/var
+:kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+:kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+:kaocha.testable/desc "test4"
+:kaocha.testable/wrap []
+:kaocha.result/fail 1
+:kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}]
+:kaocha.testable/type :kaocha.type/ns
+:kaocha.ns/ns kaocha-nrepl-dev.fail-test
+:kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+:kaocha.ns/name kaocha-nrepl-dev.fail-test
+:kaocha.testable/id :kaocha-nrepl-dev.fail-test}
+{:kaocha.test-plan/tests
+ ({:kaocha.var/test
+   kaocha-nrepl-dev.success-test/fn--29317
+   :kaocha.plugin.randomize/sort-key 491853686
+   :kaocha.testable/meta
+   {:test kaocha-nrepl-dev.success-test/fn--29317
+    :line 7
+    :column 1
+    :file "kaocha_nrepl_dev/success_test.clj"
+    :name test2
+    :ns kaocha-nrepl-dev.success-test}
+   :kaocha.testable/type :kaocha.type/var
+   :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+   :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+   :kaocha.testable/desc "test2"
+   :kaocha.testable/wrap []
+   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+  {:kaocha.var/test
+   kaocha-nrepl-dev.success-test/fn--29313
+   :kaocha.plugin.randomize/sort-key 1886789092
+   :kaocha.testable/meta
+   {:test kaocha-nrepl-dev.success-test/fn--29313
+    :line 4
+    :column 1
+    :file "kaocha_nrepl_dev/success_test.clj"
+    :name test1
+    :ns kaocha-nrepl-dev.success-test}
+   :kaocha.testable/type :kaocha.type/var
+   :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+   :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+   :kaocha.testable/desc "test1"
+   :kaocha.testable/wrap []
+   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})
+ :kaocha.plugin.randomize/sort-key 1089284813
+ :kaocha.testable/skip true
+
+ :kaocha.testable/meta nil
+ :kaocha.testable/type :kaocha.type/ns
+ :kaocha.ns/ns kaocha-nrepl-dev.success-test
+ :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+ :kaocha.ns/name kaocha-nrepl-dev.success-test
+ :kaocha.testable/id :kaocha-nrepl-dev.success-test}]
+:kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit}
+:kaocha/test-plan
+{:kaocha.test-plan/tests
+ ({:kaocha.test-plan/tests
+   ({:kaocha.testable/type :kaocha.type/ns
+     :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+     :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+     :kaocha.ns/name kaocha-nrepl-dev.fail-test
+     :kaocha.testable/meta nil
+     :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+     :kaocha.test-plan/tests
+     ({:kaocha.var/test
+
+       kaocha-nrepl-dev.fail-test/fn--29289
+       :kaocha.plugin.randomize/sort-key -1460911827
+       :kaocha.testable/meta
+       {:test kaocha-nrepl-dev.fail-test/fn--29289
+        :line 4
+        :column 1
+        :file "kaocha_nrepl_dev/fail_test.clj"
+        :name test3
+        :ns kaocha-nrepl-dev.fail-test}
+       :kaocha.testable/type :kaocha.type/var
+       :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+       :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+       :kaocha.testable/desc "test3"
+       :kaocha.testable/wrap []
+       :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+      {:kaocha.var/test
+       kaocha-nrepl-dev.fail-test/fn--29293
+       :kaocha.plugin.randomize/sort-key 1404457224
+       :kaocha.testable/meta
+       {:test kaocha-nrepl-dev.fail-test/fn--29293
+        :line 7
+        :column 1
+
+        :file "kaocha_nrepl_dev/fail_test.clj"
+        :name test4
+        :ns kaocha-nrepl-dev.fail-test}
+       :kaocha.testable/type :kaocha.type/var
+       :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+       :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+       :kaocha.testable/desc "test4"
+       :kaocha.testable/wrap []
+       :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+     :kaocha.plugin.randomize/sort-key -132964057}
+    {:kaocha.test-plan/tests
+     ({:kaocha.var/test
+       kaocha-nrepl-dev.success-test/fn--29317
+       :kaocha.plugin.randomize/sort-key 491853686
+       :kaocha.testable/meta
+       {:test kaocha-nrepl-dev.success-test/fn--29317
+        :line 7
+        :column 1
+        :file "kaocha_nrepl_dev/success_test.clj"
+        :name test2
+        :ns kaocha-nrepl-dev.success-test}
+       :kaocha.testable/type :kaocha.type/var
+       :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+       :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+       :kaocha.testable/desc "test2"
+       :kaocha.testable/wrap []
+       :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+      {:kaocha.var/test
+       kaocha-nrepl-dev.success-test/fn--29313
+       :kaocha.plugin.randomize/sort-key 1886789092
+       :kaocha.testable/meta
+       {:test kaocha-nrepl-dev.success-test/fn--29313
+        :line 4
+        :column 1
+        :file "kaocha_nrepl_dev/success_test.clj"
+        :name test1
+        :ns kaocha-nrepl-dev.success-test}
+       :kaocha.testable/type :kaocha.type/var
+       :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+       :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+       :kaocha.testable/desc "test1"
+       :kaocha.testable/wrap []
+
+       :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})
+     :kaocha.plugin.randomize/sort-key 1089284813
+     :kaocha.testable/skip true
+     :kaocha.testable/meta nil
+     :kaocha.testable/type :kaocha.type/ns
+     :kaocha.ns/ns kaocha-nrepl-dev.success-test
+     :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+     :kaocha.ns/name kaocha-nrepl-dev.success-test
+     :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+   :kaocha.plugin.randomize/sort-key -1099370431
+   :kaocha/test-paths ["dev/test"]
+   :kaocha/ns-patterns ["-test$"]
+
+   :kaocha.filter/skip-meta [:kaocha/skip]
+   :kaocha.testable/type :kaocha.type/clojure.test
+   :kaocha/source-paths ["src"]
+   :kaocha.testable/desc "unit (clojure.test)"
+   :kaocha.testable/id :unit})
+
+
+
+ :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+ :kaocha.plugin.randomize/seed 67765668
+
+}
+:type :end-test-suite})
+
+:kaocha.result/tests
+[{:kaocha.plugin.randomize/sort-key -132964057
+  :kaocha.testable/events
+  ({:file
+    "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+    :line 83
+    :kaocha/testable
+    {:kaocha.testable/type :kaocha.type/ns
+     :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+     :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+     :kaocha.ns/name kaocha-nrepl-dev.fail-test
+     :kaocha.testable/meta nil
+     :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+     :kaocha.test-plan/tests
+     ({:kaocha.var/test
+       kaocha-nrepl-dev.fail-test/fn--29289
+       :kaocha.plugin.randomize/sort-key -1460911827
+       :kaocha.testable/meta
+       {:test kaocha-nrepl-dev.fail-test/fn--29289
+        :line 4
+        :column 1
+        :file "kaocha_nrepl_dev/fail_test.clj"
+        :name test3
+        :ns kaocha-nrepl-dev.fail-test}
+       :kaocha.testable/type :kaocha.type/var
+       :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+       :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+       :kaocha.testable/desc "test3"
+       :kaocha.testable/wrap []
+       :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+      {:kaocha.var/test
+       kaocha-nrepl-dev.fail-test/fn--29293
+       :kaocha.plugin.randomize/sort-key 1404457224
+       :kaocha.testable/meta
+
+       {:test kaocha-nrepl-dev.fail-test/fn--29293
+        :line 7
+        :column 1
+        :file "kaocha_nrepl_dev/fail_test.clj"
+        :name test4
+        :ns kaocha-nrepl-dev.fail-test}
+       :kaocha.testable/type :kaocha.type/var
+       :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+       :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+       :kaocha.testable/desc "test4"
+       :kaocha.testable/wrap []
+       :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+     :kaocha.plugin.randomize/sort-key -132964057}
+    :kaocha/test-plan
+    {:kaocha.test-plan/tests
+     ({:kaocha.test-plan/tests
+       ({:kaocha.testable/type :kaocha.type/ns
+         :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+         :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+         :kaocha.ns/name kaocha-nrepl-dev.fail-test
+         :kaocha.testable/meta nil
+         :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+         :kaocha.test-plan/tests
+         ({:kaocha.var/test
+           kaocha-nrepl-dev.fail-test/fn--29289
+           :kaocha.plugin.randomize/sort-key -1460911827
+           :kaocha.testable/meta
+           {:test kaocha-nrepl-dev.fail-test/fn--29289
+            :line 4
+            :column 1
+            :file "kaocha_nrepl_dev/fail_test.clj"
+            :name test3
+            :ns kaocha-nrepl-dev.fail-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+           :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+           :kaocha.testable/desc "test3"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+          {:kaocha.var/test
+           kaocha-nrepl-dev.fail-test/fn--29293
+           :kaocha.plugin.randomize/sort-key 1404457224
+           :kaocha.testable/meta
+           {:test kaocha-nrepl-dev.fail-test/fn--29293
+            :line 7
+            :column 1
+            :file "kaocha_nrepl_dev/fail_test.clj"
+            :name test4
+            :ns kaocha-nrepl-dev.fail-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+           :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+           :kaocha.testable/desc "test4"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+         :kaocha.plugin.randomize/sort-key -132964057}
+        {:kaocha.test-plan/tests
+         ({:kaocha.var/test
+           kaocha-nrepl-dev.success-test/fn--29317
+           :kaocha.plugin.randomize/sort-key 491853686
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.success-test/fn--29317
+            :line 7
+            :column 1
+            :file "kaocha_nrepl_dev/success_test.clj"
+            :name test2
+            :ns kaocha-nrepl-dev.success-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+           :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+           :kaocha.testable/desc "test2"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+          {:kaocha.var/test
+           kaocha-nrepl-dev.success-test/fn--29313
+           :kaocha.plugin.randomize/sort-key 1886789092
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.success-test/fn--29313
+            :line 4
+            :column 1
+            :file "kaocha_nrepl_dev/success_test.clj"
+            :name test1
+            :ns kaocha-nrepl-dev.success-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+           :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+           :kaocha.testable/desc "test1"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.success-test/test1})
+         :kaocha.plugin.randomize/sort-key 1089284813
+         :kaocha.testable/skip true
+         :kaocha.testable/meta nil
+         :kaocha.testable/type :kaocha.type/ns
+         :kaocha.ns/ns kaocha-nrepl-dev.success-test
+         :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+         :kaocha.ns/name kaocha-nrepl-dev.success-test
+         :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+       :kaocha.plugin.randomize/sort-key -1099370431
+       :kaocha/test-paths ["dev/test"]
+       :kaocha/ns-patterns ["-test$"]
+
+       :kaocha.filter/skip-meta [:kaocha/skip]
+       :kaocha.testable/type :kaocha.type/clojure.test
+       :kaocha/source-paths ["src"]
+       :kaocha.testable/desc "unit (clojure.test)"
+       :kaocha.testable/id :unit})
+
+
+
+     :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+     :kaocha.plugin.randomize/seed 67765668
+
+}
+:ns kaocha-nrepl-dev.fail-test
+:type :begin-test-ns}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.testable/type :kaocha.type/ns
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+  :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+  :kaocha.ns/name kaocha-nrepl-dev.fail-test
+  :kaocha.testable/meta nil
+  :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+  :kaocha.test-plan/tests
+  ({:kaocha.var/test
+    kaocha-nrepl-dev.fail-test/fn--29289
+    :kaocha.plugin.randomize/sort-key -1460911827
+    :kaocha.testable/meta
+    {:test kaocha-nrepl-dev.fail-test/fn--29289
+     :line 4
+     :column 1
+     :file "kaocha_nrepl_dev/fail_test.clj"
+     :name test3
+     :ns kaocha-nrepl-dev.fail-test}
+    :kaocha.testable/type :kaocha.type/var
+    :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+    :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+    :kaocha.testable/desc "test3"
+    :kaocha.testable/wrap []
+
+    :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+   {:kaocha.var/test
+    kaocha-nrepl-dev.fail-test/fn--29293
+    :kaocha.plugin.randomize/sort-key 1404457224
+    :kaocha.testable/meta
+    {:test kaocha-nrepl-dev.fail-test/fn--29293
+     :line 7
+     :column 1
+     :file "kaocha_nrepl_dev/fail_test.clj"
+     :name test4
+     :ns kaocha-nrepl-dev.fail-test}
+    :kaocha.testable/type :kaocha.type/var
+    :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+    :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+    :kaocha.testable/desc "test4"
+    :kaocha.testable/wrap []
+    :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+  :kaocha.plugin.randomize/sort-key -132964057}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+    :kaocha.testable/type :kaocha.type/clojure.test
+    :kaocha/source-paths ["src"]
+    :kaocha.testable/desc "unit (clojure.test)"
+    :kaocha.testable/id :unit})
+
+
+
+  :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:ns kaocha-nrepl-dev.fail-test
+:type :end-test-ns})
+:kaocha.testable/meta nil
+:kaocha.result/tests
+[{:kaocha.result/error 0
+  :kaocha.result/pending 0
+  :kaocha.result/pass 0
+  :kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29289
+  :kaocha.plugin.randomize/sort-key -1460911827
+  :kaocha.testable/events
+  ({:file
+    "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+    :line 83
+    :kaocha/testable
+    {:kaocha.var/test
+     kaocha-nrepl-dev.fail-test/fn--29289
+     :kaocha.plugin.randomize/sort-key -1460911827
+     :kaocha.testable/meta
+     {:test kaocha-nrepl-dev.fail-test/fn--29289
+      :line 4
+      :column 1
+      :file "kaocha_nrepl_dev/fail_test.clj"
+      :name test3
+      :ns kaocha-nrepl-dev.fail-test}
+     :kaocha.testable/type :kaocha.type/var
+     :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+     :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+     :kaocha.testable/desc "test3"
+     :kaocha.testable/wrap []
+     :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+    :kaocha/test-plan
+    {:kaocha.test-plan/tests
+     ({:kaocha.test-plan/tests
+       ({:kaocha.testable/type :kaocha.type/ns
+         :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+         :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+         :kaocha.ns/name kaocha-nrepl-dev.fail-test
+         :kaocha.testable/meta nil
+         :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+         :kaocha.test-plan/tests
+         ({:kaocha.var/test
+           kaocha-nrepl-dev.fail-test/fn--29289
+           :kaocha.plugin.randomize/sort-key -1460911827
+           :kaocha.testable/meta
+           {:test kaocha-nrepl-dev.fail-test/fn--29289
+            :line 4
+            :column 1
+            :file "kaocha_nrepl_dev/fail_test.clj"
+            :name test3
+            :ns kaocha-nrepl-dev.fail-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+           :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+           :kaocha.testable/desc "test3"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+          {:kaocha.var/test
+           kaocha-nrepl-dev.fail-test/fn--29293
+           :kaocha.plugin.randomize/sort-key 1404457224
+           :kaocha.testable/meta
+           {:test kaocha-nrepl-dev.fail-test/fn--29293
+            :line 7
+            :column 1
+            :file "kaocha_nrepl_dev/fail_test.clj"
+            :name test4
+            :ns kaocha-nrepl-dev.fail-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+           :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+           :kaocha.testable/desc "test4"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.fail-test/test4})
+         :kaocha.plugin.randomize/sort-key -132964057}
+        {:kaocha.test-plan/tests
+         ({:kaocha.var/test
+           kaocha-nrepl-dev.success-test/fn--29317
+           :kaocha.plugin.randomize/sort-key 491853686
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.success-test/fn--29317
+            :line 7
+            :column 1
+            :file "kaocha_nrepl_dev/success_test.clj"
+            :name test2
+            :ns kaocha-nrepl-dev.success-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+           :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+           :kaocha.testable/desc "test2"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.success-test/test2}
+          {:kaocha.var/test
+           kaocha-nrepl-dev.success-test/fn--29313
+           :kaocha.plugin.randomize/sort-key 1886789092
+           :kaocha.testable/meta
+           {:test
+            kaocha-nrepl-dev.success-test/fn--29313
+            :line 4
+            :column 1
+            :file "kaocha_nrepl_dev/success_test.clj"
+            :name test1
+            :ns kaocha-nrepl-dev.success-test}
+           :kaocha.testable/type :kaocha.type/var
+           :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+           :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+           :kaocha.testable/desc "test1"
+           :kaocha.testable/wrap []
+           :kaocha.testable/id
+           :kaocha-nrepl-dev.success-test/test1})
+         :kaocha.plugin.randomize/sort-key 1089284813
+         :kaocha.testable/skip true
+         :kaocha.testable/meta nil
+         :kaocha.testable/type :kaocha.type/ns
+         :kaocha.ns/ns kaocha-nrepl-dev.success-test
+         :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+         :kaocha.ns/name kaocha-nrepl-dev.success-test
+         :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+       :kaocha.plugin.randomize/sort-key -1099370431
+       :kaocha/test-paths ["dev/test"]
+       :kaocha/ns-patterns ["-test$"]
+
+       :kaocha.filter/skip-meta [:kaocha/skip]
+       :kaocha.testable/type :kaocha.type/clojure.test
+       :kaocha/source-paths ["src"]
+       :kaocha.testable/desc "unit (clojure.test)"
+       :kaocha.testable/id :unit})
+
+
+
+     :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:type :begin-test-var
+:var kaocha-nrepl-dev.fail-test/test3}
+{:testing-vars (kaocha-nrepl-dev.fail-test/test3)
+ :testing-contexts ()
+ :file "fail_test.clj"
+ :type :fail
+ :line 5
+ :expected false
+
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29289
+  :kaocha.plugin.randomize/sort-key -1460911827
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29289
+   :line 4
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test3
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+  :kaocha.testable/desc "test3"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+    :kaocha.testable/type :kaocha.type/clojure.test
+    :kaocha/source-paths ["src"]
+    :kaocha.testable/desc "unit (clojure.test)"
+    :kaocha.testable/id :unit})
+
+
+
+  :kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:actual false
+:message nil}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29289
+  :kaocha.plugin.randomize/sort-key -1460911827
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29289
+   :line 4
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test3
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+  :kaocha.testable/desc "test3"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+    :kaocha.testable/type :kaocha.type/clojure.test
+    :kaocha/source-paths ["src"]
+    :kaocha.testable/desc "unit (clojure.test)"
+    :kaocha.testable/id :unit})
+
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:type :end-test-var
+:var kaocha-nrepl-dev.fail-test/test3})
+:kaocha.testable/meta
+{:test kaocha-nrepl-dev.fail-test/fn--29289
+ :line 4
+ :column 1
+ :file "kaocha_nrepl_dev/fail_test.clj"
+ :name test3
+ :ns kaocha-nrepl-dev.fail-test}
+:kaocha.result/count 1
+:kaocha.testable/type :kaocha.type/var
+:kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+
+:kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+:kaocha.testable/desc "test3"
+:kaocha.testable/wrap []
+:kaocha.result/fail 1
+:kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+{:kaocha.result/error 0
+ :kaocha.result/pending 0
+ :kaocha.result/pass 0
+ :kaocha.var/test
+ kaocha-nrepl-dev.fail-test/fn--29293
+ :kaocha.plugin.randomize/sort-key 1404457224
+ :kaocha.testable/events
+ ({:file
+   "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+   :line 83
+   :kaocha/testable
+   {:kaocha.var/test
+    kaocha-nrepl-dev.fail-test/fn--29293
+    :kaocha.plugin.randomize/sort-key 1404457224
+    :kaocha.testable/meta
+    {:test kaocha-nrepl-dev.fail-test/fn--29293
+     :line 7
+     :column 1
+     :file "kaocha_nrepl_dev/fail_test.clj"
+     :name test4
+     :ns kaocha-nrepl-dev.fail-test}
+    :kaocha.testable/type :kaocha.type/var
+    :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+    :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+    :kaocha.testable/desc "test4"
+    :kaocha.testable/wrap []
+    :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}
+   :kaocha/test-plan
+   {:kaocha.test-plan/tests
+    ({:kaocha.test-plan/tests
+      ({:kaocha.testable/type :kaocha.type/ns
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+        :kaocha.testable/meta nil
+        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+        :kaocha.test-plan/tests
+        ({:kaocha.var/test
+          kaocha-nrepl-dev.fail-test/fn--29289
+          :kaocha.plugin.randomize/sort-key -1460911827
+          :kaocha.testable/meta
+
+          {:test kaocha-nrepl-dev.fail-test/fn--29289
+           :line 4
+           :column 1
+           :file "kaocha_nrepl_dev/fail_test.clj"
+           :name test3
+           :ns kaocha-nrepl-dev.fail-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+          :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+          :kaocha.testable/desc "test3"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+         {:kaocha.var/test
+          kaocha-nrepl-dev.fail-test/fn--29293
+          :kaocha.plugin.randomize/sort-key 1404457224
+          :kaocha.testable/meta
+          {:test kaocha-nrepl-dev.fail-test/fn--29293
+           :line 7
+           :column 1
+           :file "kaocha_nrepl_dev/fail_test.clj"
+           :name test4
+           :ns kaocha-nrepl-dev.fail-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+          :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+          :kaocha.testable/desc "test4"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.fail-test/test4})
+        :kaocha.plugin.randomize/sort-key -132964057}
+       {:kaocha.test-plan/tests
+        ({:kaocha.var/test
+          kaocha-nrepl-dev.success-test/fn--29317
+          :kaocha.plugin.randomize/sort-key 491853686
+          :kaocha.testable/meta
+          {:test
+           kaocha-nrepl-dev.success-test/fn--29317
+           :line 7
+           :column 1
+           :file "kaocha_nrepl_dev/success_test.clj"
+           :name test2
+           :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+          :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+          :kaocha.testable/desc "test2"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.success-test/test2}
+         {:kaocha.var/test
+          kaocha-nrepl-dev.success-test/fn--29313
+          :kaocha.plugin.randomize/sort-key 1886789092
+          :kaocha.testable/meta
+          {:test
+           kaocha-nrepl-dev.success-test/fn--29313
+           :line 4
+           :column 1
+           :file "kaocha_nrepl_dev/success_test.clj"
+           :name test1
+           :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+
+          :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+          :kaocha.testable/desc "test1"
+          :kaocha.testable/wrap []
+          :kaocha.testable/id
+          :kaocha-nrepl-dev.success-test/test1})
+        :kaocha.plugin.randomize/sort-key 1089284813
+        :kaocha.testable/skip true
+        :kaocha.testable/meta nil
+        :kaocha.testable/type :kaocha.type/ns
+        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+        :kaocha.ns/name kaocha-nrepl-dev.success-test
+        :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+      :kaocha.plugin.randomize/sort-key -1099370431
+      :kaocha/test-paths ["dev/test"]
+      :kaocha/ns-patterns ["-test$"]
+
+      :kaocha.filter/skip-meta [:kaocha/skip]
+      :kaocha.testable/type :kaocha.type/clojure.test
+
+      :kaocha/source-paths ["src"]
+      :kaocha.testable/desc "unit (clojure.test)"
+      :kaocha.testable/id :unit})
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:type :begin-test-var
+:var kaocha-nrepl-dev.fail-test/test4}
+{:testing-vars (kaocha-nrepl-dev.fail-test/test4)
+ :testing-contexts ("context4")
+ :file "fail_test.clj"
+ :type :fail
+ :diffs (["bar" ["foo" "bar" nil]])
+ :line 9
+ :expected "foo"
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29293
+  :kaocha.plugin.randomize/sort-key 1404457224
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29293
+   :line 7
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test4
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+  :kaocha.testable/desc "test4"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+    :kaocha.testable/type :kaocha.type/clojure.test
+    :kaocha/source-paths ["src"]
+    :kaocha.testable/desc "unit (clojure.test)"
+    :kaocha.testable/id :unit})
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+}
+:actual ("bar")
+:message nil}
+{:file
+ "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ :line 83
+ :kaocha/testable
+ {:kaocha.var/test
+  kaocha-nrepl-dev.fail-test/fn--29293
+  :kaocha.plugin.randomize/sort-key 1404457224
+  :kaocha.testable/meta
+  {:test kaocha-nrepl-dev.fail-test/fn--29293
+   :line 7
+   :column 1
+   :file "kaocha_nrepl_dev/fail_test.clj"
+   :name test4
+   :ns kaocha-nrepl-dev.fail-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+
+  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+  :kaocha.testable/desc "test4"
+  :kaocha.testable/wrap []
+  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}
+ :kaocha/test-plan
+ {:kaocha.test-plan/tests
+  ({:kaocha.test-plan/tests
+    ({:kaocha.testable/type :kaocha.type/ns
+      :kaocha.testable/id :kaocha-nrepl-dev.fail-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+      :kaocha.ns/name kaocha-nrepl-dev.fail-test
+      :kaocha.testable/meta nil
+      :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+      :kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29289
+        :kaocha.plugin.randomize/sort-key -1460911827
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29289
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test3
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+        :kaocha.testable/desc "test3"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.fail-test/fn--29293
+        :kaocha.plugin.randomize/sort-key 1404457224
+        :kaocha.testable/meta
+        {:test kaocha-nrepl-dev.fail-test/fn--29293
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/fail_test.clj"
+         :name test4
+         :ns kaocha-nrepl-dev.fail-test}
+        :kaocha.testable/type :kaocha.type/var
+
+        :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+        :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+        :kaocha.testable/desc "test4"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.fail-test/test4})
+      :kaocha.plugin.randomize/sort-key -132964057}
+     {:kaocha.test-plan/tests
+      ({:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29317
+        :kaocha.plugin.randomize/sort-key 491853686
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29317
+         :line 7
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test2
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+        :kaocha.testable/desc "test2"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test2}
+       {:kaocha.var/test
+        kaocha-nrepl-dev.success-test/fn--29313
+        :kaocha.plugin.randomize/sort-key 1886789092
+        :kaocha.testable/meta
+        {:test
+         kaocha-nrepl-dev.success-test/fn--29313
+         :line 4
+         :column 1
+         :file "kaocha_nrepl_dev/success_test.clj"
+         :name test1
+         :ns kaocha-nrepl-dev.success-test}
+        :kaocha.testable/type :kaocha.type/var
+        :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+        :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+        :kaocha.testable/desc "test1"
+        :kaocha.testable/wrap []
+        :kaocha.testable/id
+        :kaocha-nrepl-dev.success-test/test1})
+      :kaocha.plugin.randomize/sort-key 1089284813
+      :kaocha.testable/skip true
+      :kaocha.testable/meta nil
+      :kaocha.testable/type :kaocha.type/ns
+      :kaocha.ns/ns kaocha-nrepl-dev.success-test
+      :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+      :kaocha.ns/name kaocha-nrepl-dev.success-test
+      :kaocha.testable/id :kaocha-nrepl-dev.success-test})
+    :kaocha.plugin.randomize/sort-key -1099370431
+    :kaocha/test-paths ["dev/test"]
+    :kaocha/ns-patterns ["-test$"]
+
+    :kaocha.filter/skip-meta [:kaocha/skip]
+    :kaocha.testable/type :kaocha.type/clojure.test
+    :kaocha/source-paths ["src"]
+    :kaocha.testable/desc "unit (clojure.test)"
+    :kaocha.testable/id :unit})
+
+
+
+
+:kaocha.filter/focus (:kaocha-nrepl-dev.fail-test)
+:kaocha.plugin.randomize/seed 67765668
+
+
+}
+:type :end-test-var
+:var kaocha-nrepl-dev.fail-test/test4})
+:kaocha.testable/meta
+{:test kaocha-nrepl-dev.fail-test/fn--29293
+ :line 7
+ :column 1
+ :file "kaocha_nrepl_dev/fail_test.clj"
+ :name test4
+ :ns kaocha-nrepl-dev.fail-test}
+:kaocha.result/count 1
+
+:kaocha.testable/type :kaocha.type/var
+:kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+:kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+:kaocha.testable/desc "test4"
+:kaocha.testable/wrap []
+:kaocha.result/fail 1
+:kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4}]
+:kaocha.testable/type :kaocha.type/ns
+:kaocha.ns/ns kaocha-nrepl-dev.fail-test
+:kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+:kaocha.ns/name kaocha-nrepl-dev.fail-test
+:kaocha.testable/id :kaocha-nrepl-dev.fail-test}
+{:kaocha.test-plan/tests
+ ({:kaocha.var/test
+   kaocha-nrepl-dev.success-test/fn--29317
+   :kaocha.plugin.randomize/sort-key 491853686
+   :kaocha.testable/meta
+   {:test kaocha-nrepl-dev.success-test/fn--29317
+    :line 7
+    :column 1
+    :file "kaocha_nrepl_dev/success_test.clj"
+    :name test2
+    :ns kaocha-nrepl-dev.success-test}
+   :kaocha.testable/type :kaocha.type/var
+   :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+   :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+   :kaocha.testable/desc "test2"
+   :kaocha.testable/wrap []
+   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+  {:kaocha.var/test
+   kaocha-nrepl-dev.success-test/fn--29313
+   :kaocha.plugin.randomize/sort-key 1886789092
+   :kaocha.testable/meta
+   {:test kaocha-nrepl-dev.success-test/fn--29313
+    :line 4
+    :column 1
+    :file "kaocha_nrepl_dev/success_test.clj"
+    :name test1
+    :ns kaocha-nrepl-dev.success-test}
+   :kaocha.testable/type :kaocha.type/var
+   :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+   :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+   :kaocha.testable/desc "test1"
+   :kaocha.testable/wrap []
+   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})
+ :kaocha.plugin.randomize/sort-key 1089284813
+ :kaocha.testable/skip true
+ :kaocha.testable/meta nil
+ :kaocha.testable/type :kaocha.type/ns
+ :kaocha.ns/ns kaocha-nrepl-dev.success-test
+ :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+ :kaocha.ns/name kaocha-nrepl-dev.success-test
+ :kaocha.testable/id :kaocha-nrepl-dev.success-test}]
+:kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit}]
+}

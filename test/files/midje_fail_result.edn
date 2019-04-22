@@ -1,0 +1,1200 @@
+{:kaocha/fail-fast? false,
+
+ :kaocha/color? true,
+ :kaocha.result/tests
+ [{:kaocha.plugin.randomize/sort-key 586333299,
+   :kaocha/test-paths ["test"],
+   :kaocha/ns-patterns ["-test$"],
+   :kaocha.testable/events
+   ({:file "kaocha.clj",
+     :line 84,
+     :kaocha/testable
+     {:kaocha.test-plan/tests
+      ({:kaocha.testable/type :kaocha.type.midje/ns,
+        :kaocha.type.midje/ns-name midjetest.core-test,
+        :kaocha.test-plan/tests
+        ({:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                  :source
+                  (midje.sweet/fact
+                   "hello world"
+                   (midje/fact
+                    hoge-fuga
+                    (sut/foo "hello")
+                    =>
+                    "helloHello, World!"
+                    (sut/foo "aa")
+                    =>
+                    "aaHello, World!")),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 8,
+                  :description "hello world",
+                  :name "hello world",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1561505771,
+          :kaocha.testable/skip true}
+         {:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1387433099}),
+        :kaocha.testable/meta nil,
+        :kaocha.plugin.randomize/sort-key -837352240}),
+      :kaocha.plugin.randomize/sort-key 586333299,
+      :kaocha/test-paths ["test"],
+      :kaocha/ns-patterns ["-test$"],
+
+      :kaocha.filter/skip-meta [:kaocha/skip],
+      :kaocha.testable/type :kaocha.type/midje,
+      :kaocha/source-paths ["src"],
+      :kaocha.testable/desc "unit (midje)",
+      :kaocha.testable/id :unit},
+     :kaocha/test-plan
+     {:kaocha.test-plan/tests
+      ({:kaocha.test-plan/tests
+        ({:kaocha.testable/type :kaocha.type.midje/ns,
+          :kaocha.testable/id :midjetest.core-test,
+          :kaocha.type.midje/ns-name midjetest.core-test,
+          :kaocha.test-plan/tests
+          ({:kaocha.testable/type :kaocha.type.midje/fact,
+            :kaocha.testable/meta
+            #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                    :source
+                    (midje.sweet/fact
+                     "hello world"
+                     (midje/fact
+                      hoge-fuga
+                      (sut/foo "hello")
+                      =>
+                      "helloHello, World!"
+                      (sut/foo "aa")
+                      =>
+                      "aaHello, World!")),
+                    :namespace midjetest.core-test,
+                    :file "midjetest/core_test.clj",
+                    :line 8,
+                    :description "hello world",
+                    :name "hello world",
+                    :top-level-fact? true},
+            :kaocha.plugin.randomize/sort-key -1561505771,
+            :kaocha.testable/skip true}
+           {:kaocha.testable/type :kaocha.type.midje/fact,
+            :kaocha.testable/meta
+            #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                    :source
+                    (midje/fact
+                     foobar
+                     (sut/foo "bb")
+                     =>
+                     "bbHello, World!a"),
+                    :namespace midjetest.core-test,
+                    :file "midjetest/core_test.clj",
+                    :line 16,
+                    :name "foobar",
+                    :top-level-fact? true},
+            :kaocha.plugin.randomize/sort-key -1387433099}),
+          :kaocha.testable/meta nil,
+          :kaocha.plugin.randomize/sort-key -837352240}),
+        :kaocha.plugin.randomize/sort-key 586333299,
+        :kaocha/test-paths ["test"],
+        :kaocha/ns-patterns ["-test$"],
+
+        :kaocha.filter/skip-meta [:kaocha/skip],
+        :kaocha.testable/type :kaocha.type/midje,
+        :kaocha/source-paths ["src"],
+        :kaocha.testable/desc "unit (midje)",
+        :kaocha.testable/id :unit}),
+      }
+     :type :begin-test-suite}
+    {:file "kaocha.clj",
+     :line 84,
+     :kaocha/testable
+     {:kaocha.plugin.randomize/sort-key 586333299,
+      :kaocha/test-paths ["test"],
+      :kaocha/ns-patterns ["-test$"],
+
+      :kaocha.result/tests
+      [{:kaocha.testable/type :kaocha.type.midje/ns,
+        :kaocha.testable/id :midjetest.core-test,
+        :kaocha.type.midje/ns-name midjetest.core-test,
+        :kaocha.testable/meta nil,
+        :kaocha.plugin.randomize/sort-key -837352240,
+        :kaocha.result/tests
+        [{:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                  :source
+                  (midje.sweet/fact
+                   "hello world"
+                   (midje/fact
+                    hoge-fuga
+                    (sut/foo "hello")
+                    =>
+                    "helloHello, World!"
+                    (sut/foo "aa")
+                    =>
+                    "aaHello, World!")),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 8,
+                  :description "hello world",
+                  :name "hello world",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1561505771,
+          :kaocha.testable/skip true}
+         {:kaocha.result/pass 0,
+          :kaocha.plugin.randomize/sort-key -1387433099,
+          :kaocha.testable/events
+          ({:file "kaocha.clj",
+            :line 84,
+            :kaocha/testable
+            {:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                     :source
+                     (midje/fact
+                      foobar
+                      (sut/foo "bb")
+                      =>
+                      "bbHello, World!a"),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 16,
+                     :name "foobar",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1387433099},
+            :kaocha/test-plan
+            {:kaocha.test-plan/tests
+             ({:kaocha.test-plan/tests
+               ({:kaocha.testable/type :kaocha.type.midje/ns,
+                 :kaocha.testable/id :midjetest.core-test,
+                 :kaocha.type.midje/ns-name midjetest.core-test,
+                 :kaocha.test-plan/tests
+                 ({:kaocha.testable/type :kaocha.type.midje/fact,
+                   :kaocha.testable/meta
+                   #:midje{:guid
+                           "80e4142d719debef0df6d505b6959586dcbe79bb",
+                           :source
+                           (midje.sweet/fact
+                            "hello world"
+                            (midje/fact
+                             hoge-fuga
+                             (sut/foo "hello")
+                             =>
+                             "helloHello, World!"
+                             (sut/foo "aa")
+                             =>
+                             "aaHello, World!")),
+                           :namespace midjetest.core-test,
+                           :file "midjetest/core_test.clj",
+                           :line 8,
+                           :description "hello world",
+                           :name "hello world",
+                           :top-level-fact? true},
+                   :kaocha.plugin.randomize/sort-key -1561505771,
+                   :kaocha.testable/skip true}
+                  {:kaocha.testable/type :kaocha.type.midje/fact,
+                   :kaocha.testable/meta
+                   #:midje{:guid
+                           "42aa9d369f820ee395d150303f98910e11088be6",
+                           :source
+                           (midje/fact
+                            foobar
+                            (sut/foo "bb")
+                            =>
+                            "bbHello, World!a"),
+                           :namespace midjetest.core-test,
+                           :file "midjetest/core_test.clj",
+                           :line 16,
+                           :name "foobar",
+                           :top-level-fact? true},
+                   :kaocha.plugin.randomize/sort-key -1387433099}),
+                 :kaocha.testable/meta nil,
+                 :kaocha.plugin.randomize/sort-key -837352240}),
+               :kaocha.plugin.randomize/sort-key 586333299,
+               :kaocha/test-paths ["test"],
+               :kaocha/ns-patterns ["-test$"],
+
+               :kaocha.filter/skip-meta [:kaocha/skip],
+               :kaocha.testable/type :kaocha.type/midje,
+               :kaocha/source-paths ["src"],
+               :kaocha.testable/desc "unit (midje)",
+               :kaocha.testable/id :unit}),
+             }
+            :type :begin-test-var}
+           {:file "checkables.clj",
+            :line 54,
+            :kaocha/testable
+            {:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                     :source
+                     (midje/fact
+                      foobar
+                      (sut/foo "bb")
+                      =>
+                      "bbHello, World!a"),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 16,
+                     :name "foobar",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1387433099},
+            :kaocha/test-plan
+            {:kaocha.test-plan/tests
+             ({:kaocha.test-plan/tests
+               ({:kaocha.testable/type :kaocha.type.midje/ns,
+                 :kaocha.testable/id :midjetest.core-test,
+                 :kaocha.type.midje/ns-name midjetest.core-test,
+                 :kaocha.test-plan/tests
+                 ({:kaocha.testable/type :kaocha.type.midje/fact,
+                   :kaocha.testable/meta
+                   #:midje{:guid
+                           "80e4142d719debef0df6d505b6959586dcbe79bb",
+                           :source
+                           (midje.sweet/fact
+                            "hello world"
+                            (midje/fact
+                             hoge-fuga
+                             (sut/foo "hello")
+                             =>
+                             "helloHello, World!"
+                             (sut/foo "aa")
+                             =>
+                             "aaHello, World!")),
+                           :namespace midjetest.core-test,
+                           :file "midjetest/core_test.clj",
+                           :line 8,
+                           :description "hello world",
+                           :name "hello world",
+                           :top-level-fact? true},
+                   :kaocha.plugin.randomize/sort-key -1561505771,
+                   :kaocha.testable/skip true}
+                  {:kaocha.testable/type :kaocha.type.midje/fact,
+                   :kaocha.testable/meta
+                   #:midje{:guid
+                           "42aa9d369f820ee395d150303f98910e11088be6",
+                           :source
+                           (midje/fact
+                            foobar
+                            (sut/foo "bb")
+                            =>
+                            "bbHello, World!a"),
+                           :namespace midjetest.core-test,
+                           :file "midjetest/core_test.clj",
+                           :line 16,
+                           :name "foobar",
+                           :top-level-fact? true},
+                   :kaocha.plugin.randomize/sort-key -1387433099}),
+                 :kaocha.testable/meta nil,
+                 :kaocha.plugin.randomize/sort-key -837352240}),
+               :kaocha.plugin.randomize/sort-key 586333299,
+               :kaocha/test-paths ["test"],
+               :kaocha/ns-patterns ["-test$"],
+
+               :kaocha.filter/skip-meta [:kaocha/skip],
+               :kaocha.testable/type :kaocha.type/midje,
+               :kaocha/source-paths ["src"],
+               :kaocha.testable/desc "unit (midje)",
+               :kaocha.testable/id :unit}),
+             }
+            :type :fail,
+            :testing-contexts (),
+            :testing-vars ()}
+           {:file "kaocha.clj",
+            :line 84,
+            :kaocha/testable
+            {:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                     :source
+                     (midje/fact
+                      foobar
+                      (sut/foo "bb")
+                      =>
+                      "bbHello, World!a"),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 16,
+                     :name "foobar",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1387433099},
+            :kaocha/test-plan
+            {:kaocha.test-plan/tests
+             ({:kaocha.test-plan/tests
+               ({:kaocha.testable/type :kaocha.type.midje/ns,
+                 :kaocha.testable/id :midjetest.core-test,
+                 :kaocha.type.midje/ns-name midjetest.core-test,
+                 :kaocha.test-plan/tests
+                 ({:kaocha.testable/type :kaocha.type.midje/fact,
+                   :kaocha.testable/meta
+                   #:midje{:guid
+                           "80e4142d719debef0df6d505b6959586dcbe79bb",
+                           :source
+                           (midje.sweet/fact
+                            "hello world"
+                            (midje/fact
+                             hoge-fuga
+                             (sut/foo "hello")
+                             =>
+                             "helloHello, World!"
+                             (sut/foo "aa")
+                             =>
+                             "aaHello, World!")),
+                           :namespace midjetest.core-test,
+                           :file "midjetest/core_test.clj",
+                           :line 8,
+                           :description "hello world",
+                           :name "hello world",
+                           :top-level-fact? true},
+                   :kaocha.plugin.randomize/sort-key -1561505771,
+                   :kaocha.testable/skip true}
+                  {:kaocha.testable/type :kaocha.type.midje/fact,
+                   :kaocha.testable/meta
+                   #:midje{:guid
+                           "42aa9d369f820ee395d150303f98910e11088be6",
+                           :source
+                           (midje/fact
+                            foobar
+                            (sut/foo "bb")
+                            =>
+                            "bbHello, World!a"),
+                           :namespace midjetest.core-test,
+                           :file "midjetest/core_test.clj",
+                           :line 16,
+                           :name "foobar",
+                           :top-level-fact? true},
+                   :kaocha.plugin.randomize/sort-key -1387433099}),
+                 :kaocha.testable/meta nil,
+                 :kaocha.plugin.randomize/sort-key -837352240}),
+               :kaocha.plugin.randomize/sort-key 586333299,
+               :kaocha/test-paths ["test"],
+               :kaocha/ns-patterns ["-test$"],
+
+               :kaocha.filter/skip-meta [:kaocha/skip],
+               :kaocha.testable/type :kaocha.type/midje,
+               :kaocha/source-paths ["src"],
+               :kaocha.testable/desc "unit (midje)",
+               :kaocha.testable/id :unit}),
+             }
+            :type :end-test-var}),
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.result/count 1,
+          :kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.result/fail 1,
+          :kaocha.type.midje/midje-failures
+          [{:description [],
+            :arrow =>,
+            :call-form (sut/foo "bb"),
+            :expected-result-form "bbHello, World!a",
+            :check-expectation :expect-match,
+            :midje.parsing.lexical-maps/a-midje-checkable-map? true,
+            :type :actual-result-did-not-match-expected-value,
+            :expected-result "bbHello, World!a",
+            :position ["form-init7214250991305243023.clj" 17],
+            :actual "bbHello, World!",
+            :namespace midjetest.core}]}],
+        :kaocha.testable/events
+        ({:file "kaocha.clj",
+          :line 84,
+          :kaocha/testable
+          {:kaocha.testable/type :kaocha.type.midje/ns,
+           :kaocha.testable/id :midjetest.core-test,
+           :kaocha.type.midje/ns-name midjetest.core-test,
+           :kaocha.test-plan/tests
+           ({:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                     :source
+                     (midje.sweet/fact
+                      "hello world"
+                      (midje/fact
+                       hoge-fuga
+                       (sut/foo "hello")
+                       =>
+                       "helloHello, World!"
+                       (sut/foo "aa")
+                       =>
+                       "aaHello, World!")),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 8,
+                     :description "hello world",
+                     :name "hello world",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1561505771,
+             :kaocha.testable/skip true}
+            {:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                     :source
+                     (midje/fact
+                      foobar
+                      (sut/foo "bb")
+                      =>
+                      "bbHello, World!a"),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 16,
+                     :name "foobar",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1387433099}),
+           :kaocha.testable/meta nil,
+           :kaocha.plugin.randomize/sort-key -837352240},
+          :kaocha/test-plan
+          {:kaocha.test-plan/tests
+           ({:kaocha.test-plan/tests
+             ({:kaocha.testable/type :kaocha.type.midje/ns,
+               :kaocha.testable/id :midjetest.core-test,
+               :kaocha.type.midje/ns-name midjetest.core-test,
+               :kaocha.test-plan/tests
+               ({:kaocha.testable/type :kaocha.type.midje/fact,
+                 :kaocha.testable/meta
+                 #:midje{:guid
+                         "80e4142d719debef0df6d505b6959586dcbe79bb",
+                         :source
+                         (midje.sweet/fact
+                          "hello world"
+                          (midje/fact
+                           hoge-fuga
+                           (sut/foo "hello")
+                           =>
+                           "helloHello, World!"
+                           (sut/foo "aa")
+                           =>
+                           "aaHello, World!")),
+                         :namespace midjetest.core-test,
+                         :file "midjetest/core_test.clj",
+                         :line 8,
+                         :description "hello world",
+                         :name "hello world",
+                         :top-level-fact? true},
+                 :kaocha.plugin.randomize/sort-key -1561505771,
+                 :kaocha.testable/skip true}
+                {:kaocha.testable/type :kaocha.type.midje/fact,
+                 :kaocha.testable/meta
+                 #:midje{:guid
+                         "42aa9d369f820ee395d150303f98910e11088be6",
+                         :source
+                         (midje/fact
+                          foobar
+                          (sut/foo "bb")
+                          =>
+                          "bbHello, World!a"),
+                         :namespace midjetest.core-test,
+                         :file "midjetest/core_test.clj",
+                         :line 16,
+                         :name "foobar",
+                         :top-level-fact? true},
+                 :kaocha.plugin.randomize/sort-key -1387433099}),
+               :kaocha.testable/meta nil,
+               :kaocha.plugin.randomize/sort-key -837352240}),
+             :kaocha.plugin.randomize/sort-key 586333299,
+             :kaocha/test-paths ["test"],
+             :kaocha/ns-patterns ["-test$"],
+
+             :kaocha.filter/skip-meta [:kaocha/skip],
+             :kaocha.testable/type :kaocha.type/midje,
+             :kaocha/source-paths ["src"],
+             :kaocha.testable/desc "unit (midje)",
+             :kaocha.testable/id :unit}),
+           }
+          :type :begin-test-ns}
+         {:file "kaocha.clj",
+          :line 84,
+          :kaocha/testable
+          {:kaocha.testable/type :kaocha.type.midje/ns,
+           :kaocha.testable/id :midjetest.core-test,
+           :kaocha.type.midje/ns-name midjetest.core-test,
+           :kaocha.test-plan/tests
+           ({:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                     :source
+                     (midje.sweet/fact
+                      "hello world"
+                      (midje/fact
+                       hoge-fuga
+                       (sut/foo "hello")
+                       =>
+                       "helloHello, World!"
+                       (sut/foo "aa")
+                       =>
+                       "aaHello, World!")),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 8,
+                     :description "hello world",
+                     :name "hello world",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1561505771,
+             :kaocha.testable/skip true}
+            {:kaocha.testable/type :kaocha.type.midje/fact,
+             :kaocha.testable/meta
+             #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                     :source
+                     (midje/fact
+                      foobar
+                      (sut/foo "bb")
+                      =>
+                      "bbHello, World!a"),
+                     :namespace midjetest.core-test,
+                     :file "midjetest/core_test.clj",
+                     :line 16,
+                     :name "foobar",
+                     :top-level-fact? true},
+             :kaocha.plugin.randomize/sort-key -1387433099}),
+           :kaocha.testable/meta nil,
+           :kaocha.plugin.randomize/sort-key -837352240},
+          :kaocha/test-plan
+          {:kaocha.test-plan/tests
+           ({:kaocha.test-plan/tests
+             ({:kaocha.testable/type :kaocha.type.midje/ns,
+               :kaocha.testable/id :midjetest.core-test,
+               :kaocha.type.midje/ns-name midjetest.core-test,
+               :kaocha.test-plan/tests
+               ({:kaocha.testable/type :kaocha.type.midje/fact,
+                 :kaocha.testable/meta
+                 #:midje{:guid
+                         "80e4142d719debef0df6d505b6959586dcbe79bb",
+                         :source
+                         (midje.sweet/fact
+                          "hello world"
+                          (midje/fact
+                           hoge-fuga
+                           (sut/foo "hello")
+                           =>
+                           "helloHello, World!"
+                           (sut/foo "aa")
+                           =>
+                           "aaHello, World!")),
+                         :namespace midjetest.core-test,
+                         :file "midjetest/core_test.clj",
+                         :line 8,
+                         :description "hello world",
+                         :name "hello world",
+                         :top-level-fact? true},
+                 :kaocha.plugin.randomize/sort-key -1561505771,
+                 :kaocha.testable/skip true}
+                {:kaocha.testable/type :kaocha.type.midje/fact,
+                 :kaocha.testable/meta
+                 #:midje{:guid
+                         "42aa9d369f820ee395d150303f98910e11088be6",
+                         :source
+                         (midje/fact
+                          foobar
+                          (sut/foo "bb")
+                          =>
+                          "bbHello, World!a"),
+                         :namespace midjetest.core-test,
+                         :file "midjetest/core_test.clj",
+                         :line 16,
+                         :name "foobar",
+                         :top-level-fact? true},
+                 :kaocha.plugin.randomize/sort-key -1387433099}),
+               :kaocha.testable/meta nil,
+               :kaocha.plugin.randomize/sort-key -837352240}),
+             :kaocha.plugin.randomize/sort-key 586333299,
+             :kaocha/test-paths ["test"],
+             :kaocha/ns-patterns ["-test$"],
+
+             :kaocha.filter/skip-meta [:kaocha/skip],
+             :kaocha.testable/type :kaocha.type/midje,
+             :kaocha/source-paths ["src"],
+             :kaocha.testable/desc "unit (midje)",
+             :kaocha.testable/id :unit}),
+           }
+          :type :end-test-ns})}],
+      :kaocha.filter/skip-meta [:kaocha/skip],
+      :kaocha.testable/type :kaocha.type/midje,
+      :kaocha/source-paths ["src"],
+      :kaocha.testable/desc "unit (midje)",
+      :kaocha.testable/id :unit},
+     :kaocha/test-plan
+     {:kaocha.test-plan/tests
+      ({:kaocha.test-plan/tests
+        ({:kaocha.testable/type :kaocha.type.midje/ns,
+          :kaocha.testable/id :midjetest.core-test,
+          :kaocha.type.midje/ns-name midjetest.core-test,
+          :kaocha.test-plan/tests
+          ({:kaocha.testable/type :kaocha.type.midje/fact,
+            :kaocha.testable/meta
+            #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                    :source
+                    (midje.sweet/fact
+                     "hello world"
+                     (midje/fact
+                      hoge-fuga
+                      (sut/foo "hello")
+                      =>
+                      "helloHello, World!"
+                      (sut/foo "aa")
+                      =>
+                      "aaHello, World!")),
+                    :namespace midjetest.core-test,
+                    :file "midjetest/core_test.clj",
+                    :line 8,
+                    :description "hello world",
+                    :name "hello world",
+                    :top-level-fact? true},
+            :kaocha.plugin.randomize/sort-key -1561505771,
+            :kaocha.testable/skip true}
+           {:kaocha.testable/type :kaocha.type.midje/fact,
+            :kaocha.testable/meta
+            #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                    :source
+                    (midje/fact
+                     foobar
+                     (sut/foo "bb")
+                     =>
+                     "bbHello, World!a"),
+                    :namespace midjetest.core-test,
+                    :file "midjetest/core_test.clj",
+                    :line 16,
+                    :name "foobar",
+                    :top-level-fact? true},
+            :kaocha.plugin.randomize/sort-key -1387433099}),
+          :kaocha.testable/meta nil,
+          :kaocha.plugin.randomize/sort-key -837352240}),
+        :kaocha.plugin.randomize/sort-key 586333299,
+        :kaocha/test-paths ["test"],
+        :kaocha/ns-patterns ["-test$"],
+
+        :kaocha.filter/skip-meta [:kaocha/skip],
+        :kaocha.testable/type :kaocha.type/midje,
+        :kaocha/source-paths ["src"],
+        :kaocha.testable/desc "unit (midje)",
+        :kaocha.testable/id :unit}),
+      }
+     :type :end-test-suite}),
+
+   :kaocha.result/tests
+   [{:kaocha.testable/type :kaocha.type.midje/ns,
+     :kaocha.testable/id :midjetest.core-test,
+     :kaocha.type.midje/ns-name midjetest.core-test,
+     :kaocha.testable/meta nil,
+     :kaocha.plugin.randomize/sort-key -837352240,
+     :kaocha.result/tests
+     [{:kaocha.testable/type :kaocha.type.midje/fact,
+       :kaocha.testable/meta
+       #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+               :source
+               (midje.sweet/fact
+                "hello world"
+                (midje/fact
+                 hoge-fuga
+                 (sut/foo "hello")
+                 =>
+                 "helloHello, World!"
+                 (sut/foo "aa")
+                 =>
+                 "aaHello, World!")),
+               :namespace midjetest.core-test,
+               :file "midjetest/core_test.clj",
+               :line 8,
+               :description "hello world",
+               :name "hello world",
+               :top-level-fact? true},
+       :kaocha.plugin.randomize/sort-key -1561505771,
+       :kaocha.testable/skip true}
+      {:kaocha.result/pass 0,
+       :kaocha.plugin.randomize/sort-key -1387433099,
+       :kaocha.testable/events
+       ({:file "kaocha.clj",
+         :line 84,
+         :kaocha/testable
+         {:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1387433099},
+         :kaocha/test-plan
+         {:kaocha.test-plan/tests
+          ({:kaocha.test-plan/tests
+            ({:kaocha.testable/type :kaocha.type.midje/ns,
+              :kaocha.testable/id :midjetest.core-test,
+              :kaocha.type.midje/ns-name midjetest.core-test,
+              :kaocha.test-plan/tests
+              ({:kaocha.testable/type :kaocha.type.midje/fact,
+                :kaocha.testable/meta
+                #:midje{:guid
+                        "80e4142d719debef0df6d505b6959586dcbe79bb",
+                        :source
+                        (midje.sweet/fact
+                         "hello world"
+                         (midje/fact
+                          hoge-fuga
+                          (sut/foo "hello")
+                          =>
+                          "helloHello, World!"
+                          (sut/foo "aa")
+                          =>
+                          "aaHello, World!")),
+                        :namespace midjetest.core-test,
+                        :file "midjetest/core_test.clj",
+                        :line 8,
+                        :description "hello world",
+                        :name "hello world",
+                        :top-level-fact? true},
+                :kaocha.plugin.randomize/sort-key -1561505771,
+                :kaocha.testable/skip true}
+               {:kaocha.testable/type :kaocha.type.midje/fact,
+                :kaocha.testable/meta
+                #:midje{:guid
+                        "42aa9d369f820ee395d150303f98910e11088be6",
+                        :source
+                        (midje/fact
+                         foobar
+                         (sut/foo "bb")
+                         =>
+                         "bbHello, World!a"),
+                        :namespace midjetest.core-test,
+                        :file "midjetest/core_test.clj",
+                        :line 16,
+                        :name "foobar",
+                        :top-level-fact? true},
+                :kaocha.plugin.randomize/sort-key -1387433099}),
+              :kaocha.testable/meta nil,
+              :kaocha.plugin.randomize/sort-key -837352240}),
+            :kaocha.plugin.randomize/sort-key 586333299,
+            :kaocha/test-paths ["test"],
+            :kaocha/ns-patterns ["-test$"],
+
+            :kaocha.filter/skip-meta [:kaocha/skip],
+            :kaocha.testable/type :kaocha.type/midje,
+            :kaocha/source-paths ["src"],
+            :kaocha.testable/desc "unit (midje)",
+            :kaocha.testable/id :unit}),
+          }
+         :type :begin-test-var}
+        {:file "checkables.clj",
+         :line 54,
+         :kaocha/testable
+         {:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1387433099},
+         :kaocha/test-plan
+         {:kaocha.test-plan/tests
+          ({:kaocha.test-plan/tests
+            ({:kaocha.testable/type :kaocha.type.midje/ns,
+              :kaocha.testable/id :midjetest.core-test,
+              :kaocha.type.midje/ns-name midjetest.core-test,
+              :kaocha.test-plan/tests
+              ({:kaocha.testable/type :kaocha.type.midje/fact,
+                :kaocha.testable/meta
+                #:midje{:guid
+                        "80e4142d719debef0df6d505b6959586dcbe79bb",
+                        :source
+                        (midje.sweet/fact
+                         "hello world"
+                         (midje/fact
+                          hoge-fuga
+                          (sut/foo "hello")
+                          =>
+                          "helloHello, World!"
+                          (sut/foo "aa")
+                          =>
+                          "aaHello, World!")),
+                        :namespace midjetest.core-test,
+                        :file "midjetest/core_test.clj",
+                        :line 8,
+                        :description "hello world",
+                        :name "hello world",
+                        :top-level-fact? true},
+                :kaocha.plugin.randomize/sort-key -1561505771,
+                :kaocha.testable/skip true}
+               {:kaocha.testable/type :kaocha.type.midje/fact,
+                :kaocha.testable/meta
+                #:midje{:guid
+                        "42aa9d369f820ee395d150303f98910e11088be6",
+                        :source
+                        (midje/fact
+                         foobar
+                         (sut/foo "bb")
+                         =>
+                         "bbHello, World!a"),
+                        :namespace midjetest.core-test,
+                        :file "midjetest/core_test.clj",
+                        :line 16,
+                        :name "foobar",
+                        :top-level-fact? true},
+                :kaocha.plugin.randomize/sort-key -1387433099}),
+              :kaocha.testable/meta nil,
+              :kaocha.plugin.randomize/sort-key -837352240}),
+            :kaocha.plugin.randomize/sort-key 586333299,
+            :kaocha/test-paths ["test"],
+            :kaocha/ns-patterns ["-test$"],
+
+            :kaocha.filter/skip-meta [:kaocha/skip],
+            :kaocha.testable/type :kaocha.type/midje,
+            :kaocha/source-paths ["src"],
+            :kaocha.testable/desc "unit (midje)",
+            :kaocha.testable/id :unit}),
+          }
+         :type :fail,
+         :testing-contexts (),
+         :testing-vars ()}
+        {:file "kaocha.clj",
+         :line 84,
+         :kaocha/testable
+         {:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1387433099},
+         :kaocha/test-plan
+         {:kaocha.test-plan/tests
+          ({:kaocha.test-plan/tests
+            ({:kaocha.testable/type :kaocha.type.midje/ns,
+              :kaocha.testable/id :midjetest.core-test,
+              :kaocha.type.midje/ns-name midjetest.core-test,
+              :kaocha.test-plan/tests
+              ({:kaocha.testable/type :kaocha.type.midje/fact,
+                :kaocha.testable/meta
+                #:midje{:guid
+                        "80e4142d719debef0df6d505b6959586dcbe79bb",
+                        :source
+                        (midje.sweet/fact
+                         "hello world"
+                         (midje/fact
+                          hoge-fuga
+                          (sut/foo "hello")
+                          =>
+                          "helloHello, World!"
+                          (sut/foo "aa")
+                          =>
+                          "aaHello, World!")),
+                        :namespace midjetest.core-test,
+                        :file "midjetest/core_test.clj",
+                        :line 8,
+                        :description "hello world",
+                        :name "hello world",
+                        :top-level-fact? true},
+                :kaocha.plugin.randomize/sort-key -1561505771,
+                :kaocha.testable/skip true}
+               {:kaocha.testable/type :kaocha.type.midje/fact,
+                :kaocha.testable/meta
+                #:midje{:guid
+                        "42aa9d369f820ee395d150303f98910e11088be6",
+                        :source
+                        (midje/fact
+                         foobar
+                         (sut/foo "bb")
+                         =>
+                         "bbHello, World!a"),
+                        :namespace midjetest.core-test,
+                        :file "midjetest/core_test.clj",
+                        :line 16,
+                        :name "foobar",
+                        :top-level-fact? true},
+                :kaocha.plugin.randomize/sort-key -1387433099}),
+              :kaocha.testable/meta nil,
+              :kaocha.plugin.randomize/sort-key -837352240}),
+            :kaocha.plugin.randomize/sort-key 586333299,
+            :kaocha/test-paths ["test"],
+            :kaocha/ns-patterns ["-test$"],
+
+            :kaocha.filter/skip-meta [:kaocha/skip],
+            :kaocha.testable/type :kaocha.type/midje,
+            :kaocha/source-paths ["src"],
+            :kaocha.testable/desc "unit (midje)",
+            :kaocha.testable/id :unit}),
+          }
+         :type :end-test-var}),
+       :kaocha.testable/meta
+       #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+               :source
+               (midje/fact
+                foobar
+                (sut/foo "bb")
+                =>
+                "bbHello, World!a"),
+               :namespace midjetest.core-test,
+               :file "midjetest/core_test.clj",
+               :line 16,
+               :name "foobar",
+               :top-level-fact? true},
+       :kaocha.result/count 1,
+       :kaocha.testable/type :kaocha.type.midje/fact,
+       :kaocha.result/fail 1,
+       :kaocha.type.midje/midje-failures
+       [{:description [],
+         :arrow =>,
+         :call-form (sut/foo "bb"),
+         :expected-result-form "bbHello, World!a",
+         :check-expectation :expect-match,
+         :midje.parsing.lexical-maps/a-midje-checkable-map? true,
+         :type :actual-result-did-not-match-expected-value,
+         :expected-result "bbHello, World!a",
+         :position ["form-init7214250991305243023.clj" 17],
+         :actual "bbHello, World!",
+         :namespace midjetest.core}]}],
+     :kaocha.testable/events
+     ({:file "kaocha.clj",
+       :line 84,
+       :kaocha/testable
+       {:kaocha.testable/type :kaocha.type.midje/ns,
+        :kaocha.testable/id :midjetest.core-test,
+        :kaocha.type.midje/ns-name midjetest.core-test,
+        :kaocha.test-plan/tests
+        ({:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                  :source
+                  (midje.sweet/fact
+                   "hello world"
+                   (midje/fact
+                    hoge-fuga
+                    (sut/foo "hello")
+                    =>
+                    "helloHello, World!"
+                    (sut/foo "aa")
+                    =>
+                    "aaHello, World!")),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 8,
+                  :description "hello world",
+                  :name "hello world",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1561505771,
+          :kaocha.testable/skip true}
+         {:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1387433099}),
+        :kaocha.testable/meta nil,
+        :kaocha.plugin.randomize/sort-key -837352240},
+       :kaocha/test-plan
+       {:kaocha.test-plan/tests
+        ({:kaocha.test-plan/tests
+          ({:kaocha.testable/type :kaocha.type.midje/ns,
+            :kaocha.testable/id :midjetest.core-test,
+            :kaocha.type.midje/ns-name midjetest.core-test,
+            :kaocha.test-plan/tests
+            ({:kaocha.testable/type :kaocha.type.midje/fact,
+              :kaocha.testable/meta
+              #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                      :source
+                      (midje.sweet/fact
+                       "hello world"
+                       (midje/fact
+                        hoge-fuga
+                        (sut/foo "hello")
+                        =>
+                        "helloHello, World!"
+                        (sut/foo "aa")
+                        =>
+                        "aaHello, World!")),
+                      :namespace midjetest.core-test,
+                      :file "midjetest/core_test.clj",
+                      :line 8,
+                      :description "hello world",
+                      :name "hello world",
+                      :top-level-fact? true},
+              :kaocha.plugin.randomize/sort-key -1561505771,
+              :kaocha.testable/skip true}
+             {:kaocha.testable/type :kaocha.type.midje/fact,
+              :kaocha.testable/meta
+              #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                      :source
+                      (midje/fact
+                       foobar
+                       (sut/foo "bb")
+                       =>
+                       "bbHello, World!a"),
+                      :namespace midjetest.core-test,
+                      :file "midjetest/core_test.clj",
+                      :line 16,
+                      :name "foobar",
+                      :top-level-fact? true},
+              :kaocha.plugin.randomize/sort-key -1387433099}),
+            :kaocha.testable/meta nil,
+            :kaocha.plugin.randomize/sort-key -837352240}),
+          :kaocha.plugin.randomize/sort-key 586333299,
+          :kaocha/test-paths ["test"],
+          :kaocha/ns-patterns ["-test$"],
+
+          :kaocha.filter/skip-meta [:kaocha/skip],
+          :kaocha.testable/type :kaocha.type/midje,
+          :kaocha/source-paths ["src"],
+          :kaocha.testable/desc "unit (midje)",
+          :kaocha.testable/id :unit}),
+        }
+       :type :begin-test-ns}
+      {:file "kaocha.clj",
+       :line 84,
+       :kaocha/testable
+       {:kaocha.testable/type :kaocha.type.midje/ns,
+        :kaocha.testable/id :midjetest.core-test,
+        :kaocha.type.midje/ns-name midjetest.core-test,
+        :kaocha.test-plan/tests
+        ({:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                  :source
+                  (midje.sweet/fact
+                   "hello world"
+                   (midje/fact
+                    hoge-fuga
+                    (sut/foo "hello")
+                    =>
+                    "helloHello, World!"
+                    (sut/foo "aa")
+                    =>
+                    "aaHello, World!")),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 8,
+                  :description "hello world",
+                  :name "hello world",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1561505771,
+          :kaocha.testable/skip true}
+         {:kaocha.testable/type :kaocha.type.midje/fact,
+          :kaocha.testable/meta
+          #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                  :source
+                  (midje/fact
+                   foobar
+                   (sut/foo "bb")
+                   =>
+                   "bbHello, World!a"),
+                  :namespace midjetest.core-test,
+                  :file "midjetest/core_test.clj",
+                  :line 16,
+                  :name "foobar",
+                  :top-level-fact? true},
+          :kaocha.plugin.randomize/sort-key -1387433099}),
+        :kaocha.testable/meta nil,
+        :kaocha.plugin.randomize/sort-key -837352240},
+       :kaocha/test-plan
+       {:kaocha.test-plan/tests
+        ({:kaocha.test-plan/tests
+          ({:kaocha.testable/type :kaocha.type.midje/ns,
+            :kaocha.testable/id :midjetest.core-test,
+            :kaocha.type.midje/ns-name midjetest.core-test,
+            :kaocha.test-plan/tests
+            ({:kaocha.testable/type :kaocha.type.midje/fact,
+              :kaocha.testable/meta
+              #:midje{:guid "80e4142d719debef0df6d505b6959586dcbe79bb",
+                      :source
+                      (midje.sweet/fact
+                       "hello world"
+                       (midje/fact
+                        hoge-fuga
+                        (sut/foo "hello")
+                        =>
+                        "helloHello, World!"
+                        (sut/foo "aa")
+                        =>
+                        "aaHello, World!")),
+                      :namespace midjetest.core-test,
+                      :file "midjetest/core_test.clj",
+                      :line 8,
+                      :description "hello world",
+                      :name "hello world",
+                      :top-level-fact? true},
+              :kaocha.plugin.randomize/sort-key -1561505771,
+              :kaocha.testable/skip true}
+             {:kaocha.testable/type :kaocha.type.midje/fact,
+              :kaocha.testable/meta
+              #:midje{:guid "42aa9d369f820ee395d150303f98910e11088be6",
+                      :source
+                      (midje/fact
+                       foobar
+                       (sut/foo "bb")
+                       =>
+                       "bbHello, World!a"),
+                      :namespace midjetest.core-test,
+                      :file "midjetest/core_test.clj",
+                      :line 16,
+                      :name "foobar",
+                      :top-level-fact? true},
+              :kaocha.plugin.randomize/sort-key -1387433099}),
+            :kaocha.testable/meta nil,
+            :kaocha.plugin.randomize/sort-key -837352240}),
+          :kaocha.plugin.randomize/sort-key 586333299,
+          :kaocha/test-paths ["test"],
+          :kaocha/ns-patterns ["-test$"],
+
+          :kaocha.filter/skip-meta [:kaocha/skip],
+          :kaocha.testable/type :kaocha.type/midje,
+          :kaocha/source-paths ["src"],
+          :kaocha.testable/desc "unit (midje)",
+          :kaocha.testable/id :unit}),
+        }
+       :type :end-test-ns})}],
+   :kaocha.filter/skip-meta [:kaocha/skip],
+   :kaocha.testable/type :kaocha.type/midje,
+   :kaocha/source-paths ["src"],
+   :kaocha.testable/desc "unit (midje)",
+   :kaocha.testable/id :unit}],
+}

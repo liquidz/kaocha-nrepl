@@ -1,0 +1,693 @@
+{:kaocha.result/tests
+ [{:kaocha.result/tests
+   [{:kaocha.result/tests
+     [{:kaocha.result/error 0
+       :kaocha.result/pending 0
+       :kaocha.result/pass 2
+       :kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+       :kaocha.testable/events
+       ({:file "kaocha.clj"
+         :line 83
+         :kaocha/testable {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                           :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                  :line 7
+                                                  :column 1
+                                                  :file "kaocha_nrepl_dev/success_test.clj"
+                                                  :name test2
+                                                  :ns kaocha-nrepl-dev.success-test}
+                           :kaocha.testable/type :kaocha.type/var
+                           :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                           :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                           :kaocha.testable/desc "test2"
+                           :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+         :kaocha/test-plan {:kaocha.test-plan/tests
+                            ({:kaocha.test-plan/tests ({:kaocha.testable/type :kaocha.type/ns
+                                                        :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                        :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                        :kaocha.testable/meta nil
+                                                        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                        :kaocha.test-plan/tests
+                                                        ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                          :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                 :line 7
+                                                                                 :column 1
+                                                                                 :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                 :name test2
+                                                                                 :ns kaocha-nrepl-dev.success-test}
+                                                          :kaocha.testable/type :kaocha.type/var
+                                                          :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                          :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                          :kaocha.testable/desc "test2"
+                                                          :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+                                                         {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                          :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                 :line 4
+                                                                                 :column 1
+                                                                                 :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                 :name test1
+                                                                                 :ns kaocha-nrepl-dev.success-test}
+                                                          :kaocha.testable/type :kaocha.type/var
+                                                          :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                          :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                          :kaocha.testable/desc "test1"
+                                                          :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})}
+                                                       {:kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                         :line 4
+                                                                                                         :column 1
+                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                         :name test3
+                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                                                                  :kaocha.testable/desc "test3"
+                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                                                 {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                         :line 7
+                                                                                                         :column 1
+                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                         :name test4
+                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                                                  :kaocha.testable/desc "test4"
+                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+                                                        :kaocha.testable/skip true
+                                                        :kaocha.testable/meta nil
+                                                        :kaocha.testable/type :kaocha.type/ns
+                                                        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                        :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                              :kaocha.filter/skip-meta [:kaocha/skip]
+                              :kaocha.testable/type :kaocha.type/clojure.test
+                              :kaocha/source-paths ["src"]
+                              :kaocha.testable/desc "unit (clojure.test)"
+                              :kaocha.testable/id :unit})}
+         :type :begin-test-var
+         :var kaocha-nrepl-dev.success-test/test2}
+        {:file "success_test.clj"
+         :line 9
+         :kaocha/testable
+         {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+          :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                 :line 7
+                                 :column 1
+                                 :file "kaocha_nrepl_dev/success_test.clj"
+                                 :name test2
+                                 :ns kaocha-nrepl-dev.success-test}
+          :kaocha.testable/type :kaocha.type/var
+          :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+          :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+          :kaocha.testable/desc "test2"
+          :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+         :kaocha/test-plan {:kaocha.test-plan/tests ({:kaocha.test-plan/tests
+                                                      ({:kaocha.testable/type :kaocha.type/ns
+                                                        :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                        :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                        :kaocha.testable/meta nil
+                                                        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                        :kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                         :line 7
+                                                                                                         :column 1
+                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                         :name test2
+                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                                                  :kaocha.testable/desc "test2"
+                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+                                                                                 {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                         :line 4
+                                                                                                         :column 1
+                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                         :name test1
+                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                                                  :kaocha.testable/desc "test1"
+                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1})}
+                                                       {:kaocha.test-plan/tests
+                                                        ({:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27108
+                                                          :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                 :line 4
+                                                                                 :column 1
+                                                                                 :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                 :name test3
+                                                                                 :ns kaocha-nrepl-dev.fail-test}
+                                                          :kaocha.testable/type :kaocha.type/var
+                                                          :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                                          :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                                          :kaocha.testable/desc "test3"
+                                                          :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                         {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                          :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                 :line 7
+                                                                                 :column 1
+                                                                                 :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                 :name test4
+                                                                                 :ns kaocha-nrepl-dev.fail-test}
+                                                          :kaocha.testable/type :kaocha.type/var
+                                                          :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                          :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                          :kaocha.testable/desc "test4"
+                                                          :kaocha.testable/id
+                                                          :kaocha-nrepl-dev.fail-test/test4})
+                                                        :kaocha.testable/skip true
+                                                        :kaocha.testable/meta nil
+                                                        :kaocha.testable/type :kaocha.type/ns
+                                                        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                        :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                                                      :kaocha.testable/type :kaocha.type/clojure.test
+                                                      :kaocha.testable/desc "unit (clojure.test)"
+                                                      :kaocha.testable/id :unit})}
+         :type :pass
+         :expected (= 1 1)
+         :actual (clojure.core/= 1 1)
+         :message nil}
+{:file "success_test.clj"
+ :line 10
+ :kaocha/testable
+ {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                         :line 7
+                         :column 1
+                         :file "kaocha_nrepl_dev/success_test.clj"
+                         :name test2
+                         :ns kaocha-nrepl-dev.success-test}
+  :kaocha.testable/type :kaocha.type/var
+  :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+  :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+  :kaocha.testable/desc "test2"
+  :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+ :kaocha/test-plan {:kaocha.test-plan/tests ({:kaocha.test-plan/tests
+                                              ({:kaocha.testable/type :kaocha.type/ns
+                                                :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                :kaocha.testable/meta nil
+                                                :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                :kaocha.test-plan/tests
+                                                ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                         :line 7
+                                                                         :column 1
+                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                         :name test2
+                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                  :kaocha.testable/type :kaocha.type/var
+                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                  :kaocha.testable/desc "test2"
+                                                  :kaocha.testable/id
+                                                  :kaocha-nrepl-dev.success-test/test2}
+                                                 {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                         :line 4
+                                                                         :column 1
+                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                         :name test1
+                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                  :kaocha.testable/type :kaocha.type/var
+                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                  :kaocha.testable/desc "test1"
+                                                  :kaocha.testable/id
+                                                  :kaocha-nrepl-dev.success-test/test1})}
+                                               {:kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                          :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                 :line 4
+                                                                                                 :column 1
+                                                                                                 :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                 :name test3
+                                                                                                 :ns kaocha-nrepl-dev.fail-test}
+                                                                          :kaocha.testable/type :kaocha.type/var
+                                                                          :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                                                          :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                                                          :kaocha.testable/desc "test3"
+                                                                          :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                                         {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                          :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                 :line 7
+                                                                                                 :column 1
+                                                                                                 :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                 :name test4
+                                                                                                 :ns kaocha-nrepl-dev.fail-test}
+                                                                          :kaocha.testable/type :kaocha.type/var
+                                                                          :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                                          :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                                          :kaocha.testable/desc "test4"
+                                                                          :kaocha.testable/id
+                                                                          :kaocha-nrepl-dev.fail-test/test4})
+                                                :kaocha.testable/skip true
+                                                :kaocha.testable/meta nil
+                                                :kaocha.testable/type :kaocha.type/ns
+                                                :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                                              :kaocha/test-paths ["dev/test"]
+                                              :kaocha/ns-patterns ["-test$"]
+                                              :kaocha.filter/skip-meta [:kaocha/skip]
+                                              :kaocha.testable/type :kaocha.type/clojure.test
+                                              :kaocha/source-paths ["src"]
+                                              :kaocha.testable/desc "unit (clojure.test)"
+                                              :kaocha.testable/id :unit})
+                    :kaocha.filter/focus (:kaocha-nrepl-dev.success-test)}
+ :type :pass
+ :expected (= 2 2)
+ :actual (clojure.core/= 2 2)
+ :message nil}
+{:file "kaocha.clj"
+ :line 83
+ :kaocha/testable {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                   :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                          :line 7
+                                          :column 1
+                                          :file "kaocha_nrepl_dev/success_test.clj"
+                                          :name test2
+                                          :ns kaocha-nrepl-dev.success-test}
+                   :kaocha.testable/type :kaocha.type/var
+                   :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                   :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                   :kaocha.testable/desc "test2"
+                   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+ :kaocha/test-plan {:kaocha.test-plan/tests ({:kaocha.test-plan/tests ({:kaocha.testable/type :kaocha.type/ns
+                                                                        :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                                        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                                        :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                                        :kaocha.testable/meta nil
+                                                                        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                                        :kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                                         :line 7
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                         :name test2
+                                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                                                                  :kaocha.testable/desc "test2"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.success-test/test2}
+                                                                                                 {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                                         :line 4
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                         :name test1
+                                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                                                                  :kaocha.testable/desc "test1"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.success-test/test1})}
+                                                                       {:kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                                         :line 4
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                         :name test3
+                                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                                                                                  :kaocha.testable/desc "test3"
+                                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                                                                 {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                                         :line 7
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                         :name test4
+                                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                                                                  :kaocha.testable/desc "test4"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.fail-test/test4})
+                                                                        :kaocha.testable/skip true
+                                                                        :kaocha.testable/meta nil
+                                                                        :kaocha.testable/type :kaocha.type/ns
+                                                                        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                                        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                                        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                                        :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                                              :kaocha/test-paths ["dev/test"]
+                                              :kaocha/ns-patterns ["-test$"]
+                                              :kaocha.filter/skip-meta [:kaocha/skip]
+                                              :kaocha.testable/type :kaocha.type/clojure.test
+                                              :kaocha/source-paths ["src"]
+                                              :kaocha.testable/desc "unit (clojure.test)"
+                                              :kaocha.testable/id :unit})
+                    :kaocha.filter/focus (:kaocha-nrepl-dev.success-test)}
+ :type :end-test-var
+ :var kaocha-nrepl-dev.success-test/test2})
+:kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                       :line 7
+                       :column 1
+                       :file "kaocha_nrepl_dev/success_test.clj"
+                       :name test2
+                       :ns kaocha-nrepl-dev.success-test}
+:kaocha.result/count 1
+:kaocha.testable/type :kaocha.type/var
+:kaocha.var/name kaocha-nrepl-dev.success-test/test2
+:kaocha.var/var kaocha-nrepl-dev.success-test/test2
+:kaocha.testable/desc "test2"
+:kaocha.result/fail 0
+:kaocha.testable/id :kaocha-nrepl-dev.success-test/test2}
+{:kaocha.result/error 0
+ :kaocha.result/pending 0
+ :kaocha.result/pass 1
+ :kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+ :kaocha.testable/events ({:file "kaocha.clj"
+                           :line 83
+                           :kaocha/testable {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                             :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                    :line 4
+                                                                    :column 1
+                                                                    :file "kaocha_nrepl_dev/success_test.clj"
+                                                                    :name test1
+                                                                    :ns kaocha-nrepl-dev.success-test}
+                                             :kaocha.testable/type :kaocha.type/var
+                                             :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                             :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                             :kaocha.testable/desc "test1"
+                                             :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1}
+                           :kaocha/test-plan {:kaocha.test-plan/tests ({:kaocha.test-plan/tests ({:kaocha.testable/type :kaocha.type/ns
+                                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                                                                  :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                                                                  :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                                                                  :kaocha.testable/meta nil
+                                                                                                  :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                                                                  :kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                                            :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                                                                   :line 7
+                                                                                                                                                   :column 1
+                                                                                                                                                   :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                                                   :name test2
+                                                                                                                                                   :ns kaocha-nrepl-dev.success-test}
+                                                                                                                            :kaocha.testable/type :kaocha.type/var
+                                                                                                                            :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                                                                                            :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                                                                                            :kaocha.testable/desc "test2"
+                                                                                                                            :kaocha.testable/id
+                                                                                                                            :kaocha-nrepl-dev.success-test/test2}
+                                                                                                                           {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                                            :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                                                                   :line 4
+                                                                                                                                                   :column 1
+                                                                                                                                                   :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                                                   :name test1
+                                                                                                                                                   :ns kaocha-nrepl-dev.success-test}
+                                                                                                                            :kaocha.testable/type :kaocha.type/var
+                                                                                                                            :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                                                                                            :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                                                                                            :kaocha.testable/desc "test1"
+                                                                                                                            :kaocha.testable/id
+                                                                                                                            :kaocha-nrepl-dev.success-test/test1})}
+                                                                                                 {:kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                                            :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                                                                   :line 4
+                                                                                                                                                   :column 1
+                                                                                                                                                   :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                                                   :name test3
+                                                                                                                                                   :ns kaocha-nrepl-dev.fail-test}
+                                                                                                                            :kaocha.testable/type :kaocha.type/var
+                                                                                                                            :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                                                                                                            :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                                                                                                            :kaocha.testable/desc "test3"
+                                                                                                                            :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                                                                                           {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                                            :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                                                                   :line 7
+                                                                                                                                                   :column 1
+                                                                                                                                                   :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                                                   :name test4
+                                                                                                                                                   :ns kaocha-nrepl-dev.fail-test}
+                                                                                                                            :kaocha.testable/type :kaocha.type/var
+                                                                                                                            :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                                                                                            :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                                                                                            :kaocha.testable/desc "test4"
+                                                                                                                            :kaocha.testable/id
+                                                                                                                            :kaocha-nrepl-dev.fail-test/test4})
+                                                                                                  :kaocha.testable/skip true
+                                                                                                  :kaocha.testable/meta nil
+                                                                                                  :kaocha.testable/type :kaocha.type/ns
+                                                                                                  :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                                                                  :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                                                                  :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                                                                        :kaocha/test-paths ["dev/test"]
+                                                                        :kaocha/ns-patterns ["-test$"]
+                                                                        :kaocha.filter/skip-meta [:kaocha/skip]
+                                                                        :kaocha.testable/type :kaocha.type/clojure.test
+                                                                        :kaocha/source-paths ["src"]
+                                                                        :kaocha.testable/desc "unit (clojure.test)"
+                                                                        :kaocha.testable/id :unit})
+                            :kaocha.filter/focus (:kaocha-nrepl-dev.success-test)}
+:type :begin-test-var
+:var kaocha-nrepl-dev.success-test/test1}
+{:file "success_test.clj"
+ :line 5
+ :kaocha/testable {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                   :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                          :line 4
+                                          :column 1
+                                          :file "kaocha_nrepl_dev/success_test.clj"
+                                          :name test1
+                                          :ns kaocha-nrepl-dev.success-test}
+                   :kaocha.testable/type :kaocha.type/var
+                   :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                   :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                   :kaocha.testable/desc "test1"
+                   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1}
+ :kaocha/test-plan {:kaocha.test-plan/tests ({:kaocha.test-plan/tests ({:kaocha.testable/type :kaocha.type/ns
+                                                                        :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                                        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                                        :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                                        :kaocha.testable/meta nil
+                                                                        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                                        :kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                                         :line 7
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                         :name test2
+                                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                                                                  :kaocha.testable/desc "test2"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.success-test/test2}
+                                                                                                 {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                                         :line 4
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                         :name test1
+                                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                                                                  :kaocha.testable/desc "test1"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.success-test/test1})}
+                                                                       {:kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27108
+                                                                                                                         :line 4
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                         :name test3
+                                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+                                                                                                  :kaocha.testable/desc "test3"
+                                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                                                                 {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                                         :line 7
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                         :name test4
+                                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                                                                  :kaocha.testable/desc "test4"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.fail-test/test4})
+                                                                        :kaocha.testable/skip true
+                                                                        :kaocha.testable/meta nil
+                                                                        :kaocha.testable/type :kaocha.type/ns
+                                                                        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                                        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                                        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                                        :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                                              :kaocha/test-paths ["dev/test"]
+                                              :kaocha/ns-patterns ["-test$"]
+                                              :kaocha.filter/skip-meta [:kaocha/skip]
+                                              :kaocha.testable/type :kaocha.type/clojure.test
+                                              :kaocha/source-paths ["src"]
+                                              :kaocha.testable/desc "unit (clojure.test)"
+                                              :kaocha.testable/id :unit})
+                    :kaocha.filter/focus (:kaocha-nrepl-dev.success-test)}
+:type :pass
+:expected true
+:actual true
+:message nil}
+{:file "kaocha.clj"
+ :line 83
+ :kaocha/testable {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                   :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                          :line 4
+                                          :column 1
+                                          :file "kaocha_nrepl_dev/success_test.clj"
+                                          :name test1
+                                          :ns kaocha-nrepl-dev.success-test}
+                   :kaocha.testable/type :kaocha.type/var
+                   :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                   :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                   :kaocha.testable/desc "test1"
+                   :kaocha.testable/id :kaocha-nrepl-dev.success-test/test1}
+ :kaocha/test-plan {:kaocha.test-plan/tests ({:kaocha.test-plan/tests ({:kaocha.testable/type :kaocha.type/ns
+                                                                        :kaocha.testable/id :kaocha-nrepl-dev.success-test
+                                                                        :kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+                                                                        :kaocha.ns/name kaocha-nrepl-dev.success-test
+                                                                        :kaocha.testable/meta nil
+                                                                        :kaocha.ns/ns kaocha-nrepl-dev.success-test
+                                                                        :kaocha.test-plan/tests ({:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27131
+                                                                                                                         :line 7
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                         :name test2
+                                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test2
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test2
+                                                                                                  :kaocha.testable/desc "test2"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.success-test/test2}
+                                                                                                 {:kaocha.var/test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.success-test/fn--27127
+                                                                                                                         :line 4
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/success_test.clj"
+                                                                                                                         :name test1
+                                                                                                                         :ns kaocha-nrepl-dev.success-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.success-test/test1
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.success-test/test1
+                                                                                                  :kaocha.testable/desc "test1"
+                                                                                                  :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+                                                                                                 {:kaocha.var/test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                  :kaocha.testable/meta {:test kaocha-nrepl-dev.fail-test/fn--27112
+                                                                                                                         :line 7
+                                                                                                                         :column 1
+                                                                                                                         :file "kaocha_nrepl_dev/fail_test.clj"
+                                                                                                                         :name test4
+                                                                                                                         :ns kaocha-nrepl-dev.fail-test}
+                                                                                                  :kaocha.testable/type :kaocha.type/var
+                                                                                                  :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+                                                                                                  :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+                                                                                                  :kaocha.testable/desc "test4"
+                                                                                                  :kaocha.testable/id
+                                                                                                  :kaocha-nrepl-dev.fail-test/test4})
+                                                                        }
+                                                                       {
+                                                                        :kaocha.testable/skip true
+                                                                        :kaocha.testable/meta nil
+                                                                        :kaocha.testable/type :kaocha.type/ns
+                                                                        :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+                                                                        :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+                                                                        :kaocha.ns/name kaocha-nrepl-dev.fail-test
+                                                                        :kaocha.testable/id :kaocha-nrepl-dev.fail-test})
+                                              :kaocha/test-paths ["dev/test"]
+                                              :kaocha/ns-patterns ["-test$"]
+                                              :kaocha.filter/skip-meta [:kaocha/skip]
+                                              :kaocha.testable/type :kaocha.type/clojure.test
+                                              :kaocha/source-paths ["src"]
+                                              :kaocha.testable/desc "unit (clojure.test)"
+                                              :kaocha.testable/id :unit})
+                    :kaocha.filter/focus (:kaocha-nrepl-dev.success-test)}
+ :type :end-test-var
+ :var kaocha-nrepl-dev.success-test/test1})
+:kaocha.testable/meta
+{:test kaocha-nrepl-dev.success-test/fn--27127
+ :line 4
+ :column 1
+ :file "kaocha_nrepl_dev/success_test.clj"
+ :name test1
+ :ns kaocha-nrepl-dev.success-test}
+:kaocha.result/count 1
+:kaocha.testable/type :kaocha.type/var
+:kaocha.var/name kaocha-nrepl-dev.success-test/test1
+:kaocha.var/var kaocha-nrepl-dev.success-test/test1
+:kaocha.testable/desc "test1"
+:kaocha.result/fail 0
+:kaocha.testable/id :kaocha-nrepl-dev.success-test/test1}]
+:kaocha.testable/type :kaocha.type/ns
+:kaocha.ns/ns kaocha-nrepl-dev.success-test
+:kaocha.testable/desc "kaocha-nrepl-dev.success-test"
+:kaocha.ns/name kaocha-nrepl-dev.success-test
+:kaocha.testable/id :kaocha-nrepl-dev.success-test}
+{:kaocha.test-plan/tests
+ ({:kaocha.var/test
+   kaocha-nrepl-dev.fail-test/fn--27108
+   :kaocha.testable/meta
+   {:test kaocha-nrepl-dev.fail-test/fn--27108
+    :line 4
+    :column 1
+    :file "kaocha_nrepl_dev/fail_test.clj"
+    :name test3
+    :ns kaocha-nrepl-dev.fail-test}
+   :kaocha.testable/type :kaocha.type/var
+   :kaocha.var/name kaocha-nrepl-dev.fail-test/test3
+   :kaocha.var/var kaocha-nrepl-dev.fail-test/test3
+   :kaocha.testable/desc "test3"
+   :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test3}
+  {:kaocha.var/test
+   kaocha-nrepl-dev.fail-test/fn--27112
+   :kaocha.testable/meta
+   {:test kaocha-nrepl-dev.fail-test/fn--27112
+    :line 7
+    :column 1
+    :file "kaocha_nrepl_dev/fail_test.clj"
+    :name test4
+    :ns kaocha-nrepl-dev.fail-test}
+   :kaocha.testable/type :kaocha.type/var
+   :kaocha.var/name kaocha-nrepl-dev.fail-test/test4
+   :kaocha.var/var kaocha-nrepl-dev.fail-test/test4
+   :kaocha.testable/desc "test4"
+   :kaocha.testable/id :kaocha-nrepl-dev.fail-test/test4})
+ :kaocha.testable/skip true
+ :kaocha.testable/meta nil
+ :kaocha.testable/type :kaocha.type/ns
+ :kaocha.ns/ns kaocha-nrepl-dev.fail-test
+ :kaocha.testable/desc "kaocha-nrepl-dev.fail-test"
+ :kaocha.ns/name kaocha-nrepl-dev.fail-test
+ :kaocha.testable/id :kaocha-nrepl-dev.fail-test}]
+
+:kaocha.filter/skip-meta [:kaocha/skip]
+:kaocha.testable/type :kaocha.type/clojure.test
+:kaocha/source-paths ["src"]
+:kaocha.testable/desc "unit (clojure.test)"
+:kaocha.testable/id :unit}]
+}

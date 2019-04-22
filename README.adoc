@@ -1,10 +1,36 @@
 = kaocha-nrepl
+:toc:
+:toc-placement: preamble
+:toclevels: 2
+
+// Need some preamble to get TOC:
+{empty}
 
 https://github.com/nrepl/nrepl[nREPL] Middleware for https://github.com/lambdaisland/kaocha[kaocha].
 
-== Usage
+== Supported types
 
-WIP
+* clojure.test
+* https://github.com/marick/Midje[Midje] via https://github.com/lambdaisland/kaocha-midje[kaocha-midje]
+
+== Ops
+
+[cols="3*,a"]
+|===
+| Op name | Required | Optional | Note
+
+| kaocha-test-all
+|
+| `config-file`
+| Run all tests.
+
+| kaocha-test
+| `testable-ids`
+| `config-file`
+| Run tests by `testable-ids`. +
+See link:cljdoc.org/d/lambdaisland/kaocha/CURRENT/doc/6-focusing-and-skipping#on-id[kaocha document] for `testable-id`.
+
+|===
 
 == License
 
