@@ -27,9 +27,7 @@
                 result/totals
                 result/totals->clojure-test-summary)
         ns-count (->> testable
-                      (mapcat :kaocha.result/tests)
-                      (remove :kaocha.testable/skip)
-                      (filter #(= :kaocha.type/ns (:kaocha.testable/type %)))
+                      (mapcat testable/testing-ns)
                       count)]
     (-> res
         (assoc :var (:test res)
@@ -45,7 +43,6 @@
 (p/defplugin kaocha-nrepl/plugin
   (post-run
    [result]
-   ;;(spit "/tmp/result.txt" (with-out-str (clojure.pprint/pprint result)))
    (when-let [testable (:kaocha.result/tests result)]
      (reset! current-report
              {:results (errors testable)

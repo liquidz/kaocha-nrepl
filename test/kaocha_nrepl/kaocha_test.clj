@@ -41,10 +41,10 @@
   (t/testing "fail"
     (t/is (= {"midjetest.core-test"
               {"foobar" [{:type "fail"
-                          :line 16
+                          :line 17
                           :context ""
-                          :expected ""
-                          :actual ""
+                          :expected "bbHello, World!a"
+                          :actual "bbHello, World!"
                           :file "midjetest/core_test.clj"
                           :var "foobar"}]}}
              (sut/errors midje-fail-testable)))))
@@ -59,7 +59,7 @@
              (sut/totals fail-testable)))))
 
 (t/deftest midje-totals-test
-  (t/is (= {:ns 0 :var 1 :test 1 :pass 0 :fail 1 :error 0}
+  (t/is (= {:ns 1 :var 1 :test 1 :pass 0 :fail 1 :error 0}
            (sut/totals midje-fail-testable))))
 
 (t/deftest testing-ns-test
