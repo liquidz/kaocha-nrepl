@@ -6,7 +6,7 @@
    :kaocha/ns-patterns ["-test$"]
    :kaocha.testable/events
    ({:file
-     "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+     "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
      :line 83
      :kaocha/testable
      {:kaocha.test-plan/tests
@@ -196,7 +196,7 @@
       }
 :type :begin-test-suite}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.plugin.randomize/sort-key -1099370431
@@ -206,7 +206,7 @@
   [{:kaocha.plugin.randomize/sort-key -132964057
     :kaocha.testable/events
     ({:file
-      "/Users/iizuka/
+      "/
       src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
       :line 83
       :kaocha/testable
@@ -355,7 +355,7 @@
 :ns kaocha-nrepl-dev.fail-test
 :type :begin-test-ns}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.testable/type :kaocha.type/ns
@@ -512,7 +512,7 @@
   :kaocha.plugin.randomize/sort-key -1460911827
   :kaocha.testable/events
   ({:file
-    "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+    "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
     :line 83
     :kaocha/testable
     {:kaocha.var/test
@@ -775,7 +775,7 @@
 :actual false
 :message nil}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.var/test
@@ -927,7 +927,7 @@
  :kaocha.plugin.randomize/sort-key 1404457224
  :kaocha.testable/events
  ({:file
-   "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+   "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
    :line 83
    :kaocha/testable
    {:kaocha.var/test
@@ -1206,7 +1206,7 @@
 :actual ("bar")
 :message nil}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.var/test
@@ -1518,7 +1518,7 @@
 [{:kaocha.plugin.randomize/sort-key -132964057
   :kaocha.testable/events
   ({:file
-    "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+    "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
     :line 83
     :kaocha/testable
     {:kaocha.testable/type :kaocha.type/ns
@@ -1668,7 +1668,7 @@
 :ns kaocha-nrepl-dev.fail-test
 :type :begin-test-ns}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.testable/type :kaocha.type/ns
@@ -1829,7 +1829,7 @@
   :kaocha.plugin.randomize/sort-key -1460911827
   :kaocha.testable/events
   ({:file
-    "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+    "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
     :line 83
     :kaocha/testable
     {:kaocha.var/test
@@ -2087,7 +2087,7 @@
 :actual false
 :message nil}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.var/test
@@ -2238,7 +2238,7 @@
  :kaocha.plugin.randomize/sort-key 1404457224
  :kaocha.testable/events
  ({:file
-   "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+   "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
    :line 83
    :kaocha/testable
    {:kaocha.var/test
@@ -2501,7 +2501,7 @@
 :actual ("bar")
 :message nil}
 {:file
- "/Users/iizuka/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
+ "/src/github.com/liquidz/kaocha-nrepl/src/kaocha_nrepl/kaocha.clj"
  :line 83
  :kaocha/testable
  {:kaocha.var/test
