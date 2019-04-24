@@ -1,0 +1,11 @@
+{
+ :kaocha/tests
+ [{:kaocha.testable/type :kaocha.type/midje
+   :kaocha.testable/id   :unit
+   :kaocha/test-paths    ["integration/midje"]
+   :kaocha/ns-patterns   ["-test$"]
+   :kaocha/source-paths  ["src"]}]
+
+ :kaocha.plugin.randomize/randomize? false
+ :kaocha/reporter [kaocha.report/dots]
+ }
