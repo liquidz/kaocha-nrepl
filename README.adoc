@@ -8,6 +8,10 @@
 
 https://github.com/nrepl/nrepl[nREPL] Middleware for https://github.com/lambdaisland/kaocha[kaocha].
 
+image:https://img.shields.io/circleci/project/github/liquidz/kaocha-nrepl/master.svg["CircleCI", link="https://circleci.com/gh/liquidz/kaocha-nrepl"]
+image:https://versions.deps.co/liquidz/kaocha-nrepl/status.svg["Dependencies Status", link="https://versions.deps.co/liquidz/kaocha-nrepl"]
+image:https://img.shields.io/clojars/v/kaocha-nrepl.svg["Clojars Project", link="https://clojars.org/kaocha-nrepl"]
+
 == Supported types
 
 * clojure.test
