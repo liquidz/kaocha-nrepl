@@ -8,15 +8,6 @@
     (sequential? x) (apply merge x)
     :else x))
 
-(defn- send-message [session testable-ids msg]
-  (let [msg (assoc msg
-                   :op "kaocha-test"
-                   :testable-ids testable-ids
-                   :config-file "test_config.edn")]
-    (-> session
-        (h/send-message msg)
-        ensure-map)))
-
 (defn run-clojure-test-test []
   (h/with-test-server [session]
     (let [id (h/random-id)
