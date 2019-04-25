@@ -10,7 +10,7 @@
   :profiles
   {:dev {:source-paths ["dev" "src"]
          :dependencies [[lambdaisland/kaocha-midje "0.0-5" :exclusions [midje/midje]]
-                        [midje/midje "1.9.6"]]}}
+                        [midje/midje "1.9.8"]]}}
 
   :aliases
   {"integration-test" ["with-profile" "+dev"
