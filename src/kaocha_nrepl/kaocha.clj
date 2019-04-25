@@ -1,7 +1,6 @@
 (ns kaocha-nrepl.kaocha
   (:require [clojure.string :as str]
             [kaocha-nrepl.kaocha.testable :as testable]
-            [kaocha.plugin :as p]
             [kaocha.repl :as kaocha]
             [kaocha.result :as result]))
 
@@ -48,15 +47,6 @@
        (mapcat testable/testing-ns)
        (str/join ", ")))
 
-(p/defplugin kaocha-nrepl/plugin
-  (post-run
-   [result]
-   (when-let [testable (:kaocha.result/tests result)]
-     (reset! current-report
-             {:results (errors testable)
-              :summary (totals testable)
-              :testing-ns (testing-ns testable)}))
-   result))
 (defn failed-testable-ids [testable]
     (->> testable
          (mapcat :kaocha.result/tests)
@@ -64,8 +54,19 @@
          (filter result/failed?)
          (map :kaocha.testable/id)))
 
+(defn hook-post-run [result]
+  (when-let [testable (:kaocha.result/tests result)]
+    (swap! last-context assoc :failed-testable-ids (failed-testable-ids testable))
+    (reset! current-report
+            {:results (errors testable)
+             :summary (totals testable)
+             :testing-ns (testing-ns testable)}))
+  result)
+
 (def ^:private default-kaocha-config
-  {:kaocha/plugins [:kaocha-nrepl/plugin]
+  {:kaocha/plugins [:kaocha.plugin/filter
+                    :kaocha.plugin/hooks]
+   :kaocha.hooks/post-run [#'hook-post-run]
    :kaocha/reporter []})
 
 (defn- gen-args [args]
