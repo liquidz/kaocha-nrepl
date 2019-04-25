@@ -12,10 +12,11 @@ image:https://img.shields.io/circleci/project/github/liquidz/kaocha-nrepl/master
 image:https://versions.deps.co/liquidz/kaocha-nrepl/status.svg["Dependencies Status", link="https://versions.deps.co/liquidz/kaocha-nrepl"]
 image:https://img.shields.io/clojars/v/kaocha-nrepl.svg["Clojars Project", link="https://clojars.org/kaocha-nrepl"]
 
-== Supported types
+== Supports
 
-* clojure.test
-* https://github.com/marick/Midje[Midje] via https://github.com/lambdaisland/kaocha-midje[kaocha-midje]
+- [x] clojure.test
+- [x] https://github.com/marick/Midje[Midje] via https://github.com/lambdaisland/kaocha-midje[kaocha-midje]
+- [ ] ClojureScript via https://github.com/lambdaisland/kaocha-cljs[kaocha-cljs]
 
 == Ops
 
@@ -33,6 +34,11 @@ image:https://img.shields.io/clojars/v/kaocha-nrepl.svg["Clojars Project", link=
 | `config-file`
 | Run tests by `testable-ids`. +
 See link:cljdoc.org/d/lambdaisland/kaocha/CURRENT/doc/6-focusing-and-skipping#on-id[kaocha document] for `testable-id`.
+
+| kaocha-retest
+|
+|
+| Rerun last failed tests.
 
 |===
 
