@@ -30,11 +30,17 @@
           (send! msg))
       (send! {:error "Invalid testable ids"} msg))))
 
+(defn- retest-reply [msg]
+  (-> (kaocha/rerun)
+      (merge {:status :done})
+      (send! msg)))
+
 (defn wrap-kaocha [handler]
   (fn [{:keys [op] :as msg}]
     (case op
       "kaocha-test-all" (test-all-reply msg)
       "kaocha-test" (test-reply msg)
+      "kaocha-retest" (retest-reply msg)
       (handler msg))))
 
 (when (resolve 'set-descriptor!)
@@ -50,4 +56,9 @@
               "kaocha-test"
               {:doc "Run tests by testable ids"
                :requires {"testable-ids" "List of testable id"}
-               :optional {"config-file" "Configuration file for kaocha"}}}}))
+               :optional {"config-file" "Configuration file for kaocha"}}
+
+              "kaocha-retest"
+              {:doc "Rerun last failed tests"
+               :requires {}
+               :optional {}}}}))

@@ -8,12 +8,20 @@
 (require 'kaocha-nrepl.kaocha.midje)
 
 (def current-report (atom nil))
+(def last-context (atom nil))
 
 (defn reset-report! []
   (reset! current-report
           {:summary {:ns 0 :var 0 :test 0 :pass 0 :fail 0 :error 0}
            :results {}
            :testing-ns nil}))
+
+(defn reset-last-context!
+  ([] (reset-last-context! {}))
+  ([config]
+   (reset! last-context
+           {:config config
+            :failed-testable-ids []})))
 
 (defn errors [testables]
   (->> testables
@@ -49,6 +57,12 @@
               :summary (totals testable)
               :testing-ns (testing-ns testable)}))
    result))
+(defn failed-testable-ids [testable]
+    (->> testable
+         (mapcat :kaocha.result/tests)
+         (mapcat :kaocha.result/tests)
+         (filter result/failed?)
+         (map :kaocha.testable/id)))
 
 (def ^:private default-kaocha-config
   {:kaocha/plugins [:kaocha-nrepl/plugin]
@@ -63,10 +77,21 @@
 
 (defn run [& args]
   (reset-report!)
-  (doall (apply kaocha/run (gen-args args)))
+  (let [args (gen-args args)]
+    (reset-last-context! (last args))
+    (doall (apply kaocha/run args)))
   @current-report)
+
+(defn rerun []
+  (when-let [ids (:failed-testable-ids @last-context)]
+    (reset-report!)
+    (let [args (concat ids [(:config @last-context)])]
+      (doall (apply kaocha/run args))
+      @current-report)))
 
 (defn run-all [config]
   (reset-report!)
-  (-> [config] gen-args first kaocha/run-all)
+  (let [config (-> [config] gen-args first)]
+    (reset-last-context! config)
+    (kaocha/run-all config))
   @current-report)
