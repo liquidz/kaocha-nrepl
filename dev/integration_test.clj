@@ -126,9 +126,9 @@
                  (:results resp))))))
 
 (defn -main []
-  (println "Integration tests: start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+  (println "\nIntegration tests: start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
   (run-clojure-test-test)
   (run-midje-test)
   (run-retest-test)
-  (println "Integration tests: end   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
+  (println "Integration tests: end   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n")
   (System/exit 0))

@@ -7,5 +7,4 @@
    :kaocha/source-paths  ["src"]}]
 
  :kaocha.plugin.randomize/randomize? false
- :kaocha/reporter [kaocha.report/dots]
  }
