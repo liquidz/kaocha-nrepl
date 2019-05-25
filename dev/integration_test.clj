@@ -63,14 +63,14 @@
                      :context ""
                      :expected "bar"
                      :file "midjetest/fail_test.clj"
-                     :line 8
+                     :line 11
                      :type "fail"
                      :var "context4"}
                     {:actual "bar"
                      :context ""
                      :expected "baz"
                      :file "midjetest/fail_test.clj"
-                     :line 9
+                     :line 12
                      :type "fail"
                      :var "context4"}]
                    :test3
@@ -78,7 +78,7 @@
                      :context ""
                      :expected "false"
                      :file "midjetest/fail_test.clj"
-                     :line 5
+                     :line 8
                      :type "fail"
                      :var "test3"}]}}
                  (:results resp))))))
