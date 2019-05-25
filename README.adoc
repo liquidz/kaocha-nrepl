@@ -13,7 +13,7 @@ image:https://versions.deps.co/liquidz/kaocha-nrepl/status.svg["Dependencies Sta
 image:https://img.shields.io/clojars/v/kaocha-nrepl.svg["Clojars Project", link="https://clojars.org/kaocha-nrepl"]
 image:https://img.shields.io/badge/patreon-donate-yellow.svg?logo=Patreon["Become a Patron", link="https://www.patreon.com/uochan"]
 
-== Supports
+== Supported tests
 
 - [x] clojure.test
 - [x] https://github.com/marick/Midje[Midje] via https://github.com/lambdaisland/kaocha-midje[kaocha-midje]
@@ -34,7 +34,7 @@ image:https://img.shields.io/badge/patreon-donate-yellow.svg?logo=Patreon["Becom
 | `testable-ids`
 | `config-file`, `disable-progress-reporter`
 | Run tests by `testable-ids`. +
-See link:cljdoc.org/d/lambdaisland/kaocha/CURRENT/doc/6-focusing-and-skipping#on-id[kaocha document] for `testable-id`.
+See link:https://cljdoc.org/d/lambdaisland/kaocha/CURRENT/doc/6-focusing-and-skipping#on-id[kaocha document] for `testable-id`.
 
 | kaocha-retest
 |
@@ -42,6 +42,10 @@ See link:cljdoc.org/d/lambdaisland/kaocha/CURRENT/doc/6-focusing-and-skipping#on
 | Rerun last failed tests.
 
 |===
+
+== Related projects
+
+- https://github.com/liquidz/vim-iced-kaocha[liquidz/vim-iced-kaocha]
 
 == License
 
