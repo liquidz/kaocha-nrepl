@@ -2,9 +2,8 @@
   (:require [clojure.string :as str]
             [kaocha-nrepl.kaocha.testable :as testable]
             [kaocha.repl :as kaocha]
-            [kaocha.result :as result]))
-
-(require 'kaocha-nrepl.kaocha.midje)
+            [kaocha.result :as result]
+            kaocha-nrepl.kaocha.midje))
 
 (def current-report (atom nil))
 (def last-context (atom nil))

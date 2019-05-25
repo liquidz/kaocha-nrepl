@@ -10,8 +10,9 @@
   (transport/send (:transport msg) (response-for msg m)))
 
 (defn- progress-reporter [msg test _test-plan]
-  (let [fmt (:progress-format msg default-progress-format)]
-    (send! {:out (format fmt (str (:kaocha.testable/id test)))} msg))
+  (when-not (:kaocha.testable/skip test)
+    (let [fmt (:progress-format msg default-progress-format)]
+      (send! {:out (format fmt (str (:kaocha.testable/id test)))} msg)))
   test)
 
 (defn- gen-config [msg]
