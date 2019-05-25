@@ -1,4 +1,4 @@
-(defproject kaocha-nrepl "0.1.0-SNAPSHOT"
+(defproject kaocha-nrepl "0.1.0"
   :description "nREPL Middleware for kaocha"
   :url "https://github.com/liquidz/kaocha-nrepl"
   :license {:name "Eclipse Public License"
