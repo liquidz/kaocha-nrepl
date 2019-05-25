@@ -19,6 +19,14 @@
    :1.9 [:dev {:dependencies [[org.clojure/clojure "1.9.0"]]}]
    :1.10 [:dev {:dependencies [[org.clojure/clojure "1.10.0"]]}]}
 
+  :release-tasks [["vcs" "assert-committed"]
+                  ["change" "version" "leiningen.release/bump-version" "release"]
+                  ["vcs" "commit"]
+                  ["vcs" "tag"]
+                  ["change" "version" "leiningen.release/bump-version"]
+                  ["vcs" "commit"]
+                  ["vcs" "push"]]
+
   :aliases
   {"integration-test" ["with-profile" "1.9:1.10"
                        "run" "-m" "integration-test"]
