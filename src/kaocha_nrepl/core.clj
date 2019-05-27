@@ -4,15 +4,33 @@
             [nrepl.misc :refer [response-for]]
             [nrepl.transport :as transport]))
 
-(def ^:private default-progress-format "Testing: %s")
+(def ^:private test-context (atom {}))
+
+(defn- init-test-context! []
+  (reset! test-context {}))
 
 (defn- send! [m msg]
   (transport/send (:transport msg) (response-for msg m)))
 
 (defn- progress-reporter [msg test _test-plan]
   (when-not (:kaocha.testable/skip test)
-    (let [fmt (:progress-format msg default-progress-format)]
-      (send! {:out (format fmt (str (:kaocha.testable/id test)))} msg)))
+    (let [test-type (:kaocha.testable/type test)
+          tests (some->> test
+                         :kaocha.test-plan/tests
+                         (remove :kaocha.testable/skip))]
+      (when tests
+        (swap! test-context assoc
+               (-> tests first :kaocha.testable/type)
+               {:total (count tests) :current 0}))
+
+      (if-let [{:keys [current total]} (get @test-context test-type)]
+        (do (swap! test-context update-in [test-type :current] inc)
+            (send! {:out (format "Testing %s(%d/%d): %s"
+                                 (name test-type)
+                                 (inc current)
+                                 total
+                                 (str (:kaocha.testable/id test)))} msg))
+        (send! {:out (format "Testing: %s" (str (:kaocha.testable/id test)))} msg))))
   test)
 
 (defn- gen-config [msg]
@@ -30,12 +48,14 @@
     (not (sequential? x)) vector))
 
 (defn- test-all-reply [msg]
+  (init-test-context!)
   (-> (gen-config msg)
       kaocha/run-all
       (merge {:status :done})
       (send! msg)))
 
 (defn- test-reply [msg]
+  (init-test-context!)
   (let [{:keys [testable-ids]} msg
         config (gen-config msg)
         run-args (some-> testable-ids ensure-list (concat [config]))]
@@ -46,6 +66,7 @@
       (send! {:error "Invalid testable ids"} msg))))
 
 (defn- retest-reply [msg]
+  (init-test-context!)
   (-> (kaocha/rerun)
       (merge {:status :done})
       (send! msg)))
