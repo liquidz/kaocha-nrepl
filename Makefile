@@ -1,6 +1,6 @@
 .PHONY: repl test install release clean
 
-VERSION := 1.10
+VERSION := 1.10.1
 
 repl:
 	iced repl with-profile $(VERSION)
@@ -8,8 +8,11 @@ repl:
 test:
 	lein test-all
 
+coverage:
+	lein with-profile +release cloverage
+
 install:
-	lein install
+	lein with-profile +release install
 
 clean:
 	lein clean
