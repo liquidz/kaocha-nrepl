@@ -9,7 +9,7 @@
         testable-meta (:kaocha.testable/meta testable)]
     {:ns-name (str (:ns testable-meta))
      :test-name (str (:name testable-meta))
-     :result {:type (-> m :type name)
+     :result {:type "fail" ; NOTE: Handle as `fail` even if type is `error`
               :line (:line m)
               :context (->> m :testing-contexts (str/join " "))
               :expected (-> m :expected str)
@@ -23,7 +23,7 @@
        (mapcat :kaocha.result/tests)
        (remove :kaocha.testable/skip)
        (mapcat :kaocha.testable/events)
-       (filter #(#{:fail} (:type %)))
+       (filter #(#{:fail :error} (:type %)))
        (map parse-test-var)))
 
 (defmethod testing-ns :default
