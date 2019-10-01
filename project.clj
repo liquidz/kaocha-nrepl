@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[nrepl "0.6.0"]
-                 [lambdaisland/kaocha "0.0-541"
+                 [lambdaisland/kaocha "0.0-549"
                   :exclusions [org.clojure/clojure]]]
 
   :plugins [[lein-cloverage "1.1.1"]]
