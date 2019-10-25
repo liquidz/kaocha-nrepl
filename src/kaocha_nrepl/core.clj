@@ -43,9 +43,10 @@
       (not disable-progress-reporter)
       (assoc :kaocha.hooks/pre-test [(partial progress-reporter msg)]))))
 
-(defn- ensure-list [x]
-  (cond-> x
-    (not (sequential? x)) vector))
+(defn- ensure-keyword-list [x]
+  (some->> (cond-> x
+             (not (sequential? x)) vector)
+           (map keyword)))
 
 (defn- test-all-reply [msg]
   (init-test-context!)
@@ -58,12 +59,18 @@
   (init-test-context!)
   (let [{:keys [testable-ids]} msg
         config (gen-config msg)
-        run-args (some-> testable-ids ensure-list (concat [config]))]
+        run-args (some-> testable-ids ensure-keyword-list (concat [config]))]
     (if run-args
       (-> (apply kaocha/run run-args)
           (merge {:status :done})
           (send! msg))
       (send! {:error "Invalid testable ids"} msg))))
+
+(defn- testable-ids-reply [msg]
+  (-> (gen-config msg)
+      kaocha/testable-ids
+      (merge {:status :done})
+      (send! msg)))
 
 (defn- retest-reply [msg]
   (init-test-context!)
@@ -76,6 +83,7 @@
     (case op
       "kaocha-test-all" (test-all-reply msg)
       "kaocha-test" (test-reply msg)
+      "kaocha-testable-ids" (testable-ids-reply msg)
       "kaocha-retest" (retest-reply msg)
       (handler msg))))
 
@@ -92,6 +100,11 @@
               "kaocha-test"
               {:doc "Run tests by testable ids"
                :requires {"testable-ids" "List of testable id"}
+               :optional {"config-file" "Configuration file for kaocha"}}
+
+              "kaocha-testable-ids"
+              {:doc "Return testable ids"
+               :requires {}
                :optional {"config-file" "Configuration file for kaocha"}}
 
               "kaocha-retest"

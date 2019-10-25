@@ -3,7 +3,7 @@
             [kaocha-nrepl.kaocha.testable :as testable]
             [kaocha.repl :as kaocha]
             [kaocha.result :as result]
-            kaocha-nrepl.kaocha.midje))
+            [kaocha-nrepl.kaocha.midje]))
 
 (def current-report (atom nil))
 (def last-context (atom nil))
@@ -95,3 +95,10 @@
     (reset-last-context! config)
     (kaocha/run-all config))
   @current-report)
+
+(defn testable-ids [config]
+  (->> (kaocha/test-plan config)
+       :kaocha.test-plan/tests
+       (mapcat :kaocha.test-plan/tests)
+       (map :kaocha.testable/id)
+       (hash-map :testable-ids)))
