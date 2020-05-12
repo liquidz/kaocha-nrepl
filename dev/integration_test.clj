@@ -1,14 +1,17 @@
 (ns integration-test
-  (:require [clojure.string :as str]
-            [kaocha-nrepl.kaocha :as kaocha]
-            [kaocha-nrepl.test-helper :as h]))
+  (:require
+   [clojure.string :as str]
+   [kaocha-nrepl.kaocha :as kaocha]
+   [kaocha-nrepl.test-helper :as h]))
 
-(defn- ensure-map [x]
+(defn- ensure-map
+  [x]
   (cond
     (sequential? x) (apply merge x)
     :else x))
 
-(defn run-clojure-test-test []
+(defn run-clojure-test-test
+  []
   (h/with-test-server [session]
     (let [id (h/random-id)
           resp (-> session
@@ -58,7 +61,8 @@
                     :var "cljtest.error-test/test5"}
                    (select-keys test5 [:context :expected :file :line :type :var])))))))
 
-(defn- run-midje-test []
+(defn- run-midje-test
+  []
   (h/with-test-server [session]
     (let [id (h/random-id)
           resp (-> session
@@ -96,7 +100,8 @@
                      :var "test3"}]}}
                  (:results resp))))))
 
-(defn run-retest-test []
+(defn run-retest-test
+  []
   (h/with-test-server [session]
     (doall (h/send-message session {:op "kaocha-test" :testable-ids ["unit"] :config-file "integration/clojure_test.edn"}))
 
@@ -155,7 +160,8 @@
                     :var "cljtest.error-test/test5"}
                    (select-keys test5 [:context :expected :file :line :type :var])))))))
 
-(defn -main []
+(defn -main
+  []
   (println "\nIntegration tests: start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
   (run-clojure-test-test)
   (run-midje-test)

@@ -1,10 +1,12 @@
 (ns kaocha-nrepl.kaocha.testable
-  (:require [clojure.string :as str]))
+  (:require
+   [clojure.string :as str]))
 
 (defmulti errors :kaocha.testable/type)
 (defmulti testing-ns :kaocha.testable/type)
 
-(defn- parse-test-var [m]
+(defn- parse-test-var
+  [m]
   (let [testable (:kaocha/testable m)
         testable-meta (:kaocha.testable/meta testable)]
     {:ns-name (str (:ns testable-meta))

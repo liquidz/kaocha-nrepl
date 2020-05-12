@@ -1,6 +1,7 @@
 (ns midjetest.fail-test
-  (:require [midje.config :as config]
-            [midje.sweet :as midje]))
+  (:require
+   [midje.config :as config]
+   [midje.sweet :as midje]))
 
 (config/change-defaults :print-level :print-nothing)
 

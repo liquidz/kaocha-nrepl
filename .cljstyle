@@ -1,0 +1,9 @@
+{
+ :list-indent-size 1
+ :insert-padding-lines? false
+ :indents {#"(.*/)?with-" [[:block 1]]
+           midje/facts [[:block 1]]
+           midje/fact [[:block 1]]
+           }
+ }
+; vim:ft=clojure

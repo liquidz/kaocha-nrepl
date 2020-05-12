@@ -1,5 +1,6 @@
 (ns cljtest.success-test
-  (:require [clojure.test :as t]))
+  (:require
+   [clojure.test :as t]))
 
 (t/deftest test1
   (t/is true))

@@ -1,13 +1,15 @@
 (ns kaocha-nrepl.kaocha-test
-  (:require [clojure.edn :as edn]
-            [clojure.java.io :as io]
-            [clojure.test :as t]
-            [kaocha-nrepl.kaocha :as sut]))
+  (:require
+   [clojure.edn :as edn]
+   [clojure.java.io :as io]
+   [clojure.test :as t]
+   [kaocha-nrepl.kaocha :as sut]))
 
-(defn- read-testable [path]
-   (-> (io/file path)
-       slurp
-       edn/read-string
+(defn- read-testable
+  [path]
+  (-> (io/file path)
+      slurp
+      edn/read-string
       :kaocha.result/tests))
 
 (def success-testable (read-testable "test/files/success_result.edn"))

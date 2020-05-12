@@ -1,18 +1,22 @@
 (ns kaocha-nrepl.core
-  (:require [kaocha-nrepl.kaocha :as kaocha]
-            [nrepl.middleware :refer [set-descriptor!]]
-            [nrepl.misc :refer [response-for]]
-            [nrepl.transport :as transport]))
+  (:require
+   [kaocha-nrepl.kaocha :as kaocha]
+   [nrepl.middleware :refer [set-descriptor!]]
+   [nrepl.misc :refer [response-for]]
+   [nrepl.transport :as transport]))
 
 (def ^:private test-context (atom {}))
 
-(defn- init-test-context! []
+(defn- init-test-context!
+  []
   (reset! test-context {}))
 
-(defn- send! [m msg]
+(defn- send!
+  [m msg]
   (transport/send (:transport msg) (response-for msg m)))
 
-(defn- progress-reporter [msg test _test-plan]
+(defn- progress-reporter
+  [msg test _test-plan]
   (when-not (:kaocha.testable/skip test)
     (let [test-type (:kaocha.testable/type test)
           tests (some->> test
@@ -33,7 +37,8 @@
         (send! {:out (format "Testing: %s" (str (:kaocha.testable/id test)))} msg))))
   test)
 
-(defn- gen-config [msg]
+(defn- gen-config
+  [msg]
   (let [{:keys [config-file disable-progress-reporter]
          :or {disable-progress-reporter false}} msg]
     (cond-> {}
@@ -43,19 +48,22 @@
       (not disable-progress-reporter)
       (assoc :kaocha.hooks/pre-test [(partial progress-reporter msg)]))))
 
-(defn- ensure-keyword-list [x]
+(defn- ensure-keyword-list
+  [x]
   (some->> (cond-> x
              (not (sequential? x)) vector)
            (map keyword)))
 
-(defn- test-all-reply [msg]
+(defn- test-all-reply
+  [msg]
   (init-test-context!)
   (-> (gen-config msg)
       kaocha/run-all
       (merge {:status :done})
       (send! msg)))
 
-(defn- test-reply [msg]
+(defn- test-reply
+  [msg]
   (init-test-context!)
   (let [{:keys [testable-ids]} msg
         config (gen-config msg)
@@ -66,19 +74,22 @@
           (send! msg))
       (send! {:error "Invalid testable ids"} msg))))
 
-(defn- testable-ids-reply [msg]
+(defn- testable-ids-reply
+  [msg]
   (-> (gen-config msg)
       kaocha/testable-ids
       (merge {:status :done})
       (send! msg)))
 
-(defn- retest-reply [msg]
+(defn- retest-reply
+  [msg]
   (init-test-context!)
   (-> (kaocha/rerun)
       (merge {:status :done})
       (send! msg)))
 
-(defn wrap-kaocha [handler]
+(defn wrap-kaocha
+  [handler]
   (fn [{:keys [op] :as msg}]
     (case op
       "kaocha-test-all" (test-all-reply msg)

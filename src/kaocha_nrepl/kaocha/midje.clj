@@ -1,7 +1,9 @@
 (ns kaocha-nrepl.kaocha.midje
-  (:require [kaocha-nrepl.kaocha.testable :as t]))
+  (:require
+   [kaocha-nrepl.kaocha.testable :as t]))
 
-(defn- parse-testable [testable]
+(defn- parse-testable
+  [testable]
   (let [testable-meta (:kaocha.testable/meta testable)
         test-name (str (:midje/name testable-meta))]
     (for [fail (:kaocha.type.midje/midje-failures testable)]
