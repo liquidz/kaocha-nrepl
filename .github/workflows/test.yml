@@ -11,9 +11,9 @@ jobs:
       image: clojure:${{ matrix.clojure }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v1.1.0
+      - uses: actions/cache@v1
         with:
-          path: ~/.m2
+          path: /root/.m2
           key: v1-m2-${{ hashFiles('project.clj') }}
       - run: lein deps
       - run: lein test-all
