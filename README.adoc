@@ -8,10 +8,10 @@
 
 https://github.com/nrepl/nrepl[nREPL] Middleware for https://github.com/lambdaisland/kaocha[kaocha].
 
-image:https://img.shields.io/circleci/project/github/liquidz/kaocha-nrepl/master.svg["CircleCI", link="https://circleci.com/gh/liquidz/kaocha-nrepl"]
+image:https://github.com/liquidz/kaocha-nrepl/workflows/test/badge.svg["GitHub Actions for test workflow", link="https://github.com/liquidz/kaocha-nrepl/actions?query=workflow%3Atest"]
+image:https://github.com/liquidz/kaocha-nrepl/workflows/lint/badge.svg["GitHub Actions for lint workflow", link="https://github.com/liquidz/kaocha-nrepl/actions?query=workflow%3Alint"]
 image:https://versions.deps.co/liquidz/kaocha-nrepl/status.svg["Dependencies Status", link="https://versions.deps.co/liquidz/kaocha-nrepl"]
 image:https://img.shields.io/clojars/v/kaocha-nrepl.svg["Clojars Project", link="https://clojars.org/kaocha-nrepl"]
-image:https://img.shields.io/badge/patreon-donate-yellow.svg?logo=Patreon["Become a Patron", link="https://www.patreon.com/uochan"]
 
 == Supported tests
 
@@ -54,7 +54,7 @@ See link:https://cljdoc.org/d/lambdaisland/kaocha/CURRENT/doc/6-focusing-and-ski
 
 == License
 
-Copyright © 2019 https://twitter.com/uochan[Masashi Iizuka]
+Copyright © 2019-2020 https://twitter.com/uochan[Masashi Iizuka]
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
