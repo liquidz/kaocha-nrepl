@@ -28,21 +28,21 @@
                            :context ""
                            :expected "false"
                            :file "cljtest/fail_test.clj"
-                           :line 5
+                           :line 6
                            :type "fail"
                            :var "cljtest.fail-test/test3"}]
                   :test4 [{:actual "(not (= \"foo\" \"bar\"))"
                            :context "context4"
                            :expected "(= \"foo\" \"bar\")"
                            :file "cljtest/fail_test.clj"
-                           :line 9
+                           :line 10
                            :type "fail"
                            :var "cljtest.fail-test/test4"}
                           {:actual "(not (= \"bar\" \"baz\"))"
                            :context "context4"
                            :expected "(= \"bar\" \"baz\")"
                            :file "cljtest/fail_test.clj"
-                           :line 10
+                           :line 11
                            :type "fail"
                            :var "cljtest.fail-test/test4"}]}
                  (get-in resp [:results :cljtest.fail-test])))
@@ -56,7 +56,7 @@
         (assert (= {:context ""
                     :expected ""
                     :file "cljtest/error_test.clj"
-                    :line 5
+                    :line 6
                     :type "fail" ; not "error"
                     :var "cljtest.error-test/test5"}
                    (select-keys test5 [:context :expected :file :line :type :var])))))))
@@ -80,14 +80,14 @@
                      :context ""
                      :expected "bar"
                      :file "midjetest/fail_test.clj"
-                     :line 11
+                     :line 12
                      :type "fail"
                      :var "context4"}
                     {:actual "bar"
                      :context ""
                      :expected "baz"
                      :file "midjetest/fail_test.clj"
-                     :line 12
+                     :line 13
                      :type "fail"
                      :var "context4"}]
                    :test3
@@ -95,7 +95,7 @@
                      :context ""
                      :expected "false"
                      :file "midjetest/fail_test.clj"
-                     :line 8
+                     :line 9
                      :type "fail"
                      :var "test3"}]}}
                  (:results resp))))))
@@ -127,21 +127,21 @@
                            :context ""
                            :expected "false"
                            :file "cljtest/fail_test.clj"
-                           :line 5
+                           :line 6
                            :type "fail"
                            :var "cljtest.fail-test/test3"}]
                   :test4 [{:actual "(not (= \"foo\" \"bar\"))"
                            :context "context4"
                            :expected "(= \"foo\" \"bar\")"
                            :file "cljtest/fail_test.clj"
-                           :line 9
+                           :line 10
                            :type "fail"
                            :var "cljtest.fail-test/test4"}
                           {:actual "(not (= \"bar\" \"baz\"))"
                            :context "context4"
                            :expected "(= \"bar\" \"baz\")"
                            :file "cljtest/fail_test.clj"
-                           :line 10
+                           :line 11
                            :type "fail"
                            :var "cljtest.fail-test/test4"}]}
                  (get-in resp [:results :cljtest.fail-test])))
@@ -155,7 +155,7 @@
         (assert (= {:context ""
                     :expected ""
                     :file "cljtest/error_test.clj"
-                    :line 5
+                    :line 6
                     :type "fail" ; not "error"
                     :var "cljtest.error-test/test5"}
                    (select-keys test5 [:context :expected :file :line :type :var])))))))
