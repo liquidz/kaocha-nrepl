@@ -3,11 +3,11 @@
   :url "https://github.com/liquidz/kaocha-nrepl"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[nrepl "0.6.0"]
-                 [lambdaisland/kaocha "0.0-554"
+  :dependencies [[nrepl "0.7.0"]
+                 [lambdaisland/kaocha "1.0.629"
                   :exclusions [org.clojure/clojure]]]
 
-  :plugins [[lein-cloverage "1.1.1"]]
+  :plugins [[lein-cloverage "1.1.2"]]
 
   :profiles
   {:dev {:source-paths ["dev" "src"]
