@@ -8,7 +8,7 @@ jobs:
         clojure: [openjdk-8-lein, openjdk-11-lein]
     runs-on: ubuntu-latest
     container:
-      image: clojure/${{ matrix.clojure }}
+      image: clojure:${{ matrix.clojure }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v1.1.0
