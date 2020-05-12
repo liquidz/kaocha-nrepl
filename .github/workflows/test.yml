@@ -3,10 +3,17 @@ on: [push]
 
 jobs:
   build:
+    strategy:
+      matrix:
+        clojure: [openjdk-8-lein, openjdk-11-lein]
     runs-on: ubuntu-latest
+    container:
+      image: clojure/${{ matrix.clojure }}
     steps:
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: lein deps
-    - name: Run tests
-      run: lein test-all
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1.1.0
+        with:
+          path: ~/.m2
+          key: v1-m2-${{ hashFiles('project.clj') }}
+      - run: lein deps
+      - run: lein test-all
