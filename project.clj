@@ -16,7 +16,8 @@
                                       lambdaisland/kaocha
                                       midje/midje]]
                         [midje/midje "1.9.9"
-                         :exclusions [org.clojure/clojure]]]}
+                         :exclusions [org.clojure/clojure]]
+                        [antq "RELEASE"]]}
 
    :1.9 [:dev {:dependencies [[org.clojure/clojure "1.9.0"]]}]
    :1.10 [:dev {:dependencies [[org.clojure/clojure "1.10.0"]]}]
@@ -32,6 +33,7 @@
                   ["vcs" "push"]]
 
   :aliases
-  {"integration-test" ["with-profile" "1.9:1.10:1.10.1"
+  {"outdated" ["run" "-m" "antq.core"]
+   "integration-test" ["with-profile" "1.9:1.10:1.10.1"
                        "run" "-m" "integration-test"]
    "test-all" ["do" ["with-profile" "1.9:1.10:1.10.1" "test"] ["integration-test"]]})

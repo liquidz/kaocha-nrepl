@@ -1,4 +1,4 @@
-.PHONY: repl test coverage install release deploy clean
+.PHONY: repl test coverage install release deploy outdated clean
 
 VERSION := 1.10.1
 
@@ -19,6 +19,9 @@ release:
 
 deploy:
 	lein with-profile +release deploy clojars
+
+outdated:
+	lein outdated
 
 clean:
 	lein clean
