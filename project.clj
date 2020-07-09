@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[nrepl "0.7.0"]
-                 [lambdaisland/kaocha "1.0.632"
+                 [lambdaisland/kaocha "1.0.641"
                   :exclusions [org.clojure/clojure]]]
 
   :plugins [[lein-cloverage "1.1.2"]]
@@ -16,13 +16,13 @@
                                       lambdaisland/kaocha
                                       midje/midje]]
                         [midje/midje "1.9.9"
-                         :exclusions [org.clojure/clojure]]
-                        [antq "RELEASE"]]}
+                         :exclusions [org.clojure/clojure]]]}
 
    :1.9 [:dev {:dependencies [[org.clojure/clojure "1.9.0"]]}]
    :1.10 [:dev {:dependencies [[org.clojure/clojure "1.10.0"]]}]
    :1.10.1 [:dev {:dependencies [[org.clojure/clojure "1.10.1"]]}]
-   :release {:dependencies [[org.clojure/clojure "1.10.1"]]}}
+   :release {:dependencies [[org.clojure/clojure "1.10.1"]]}
+   :antq {:dependencies [[antq "RELEASE"]]}}
 
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
@@ -33,7 +33,6 @@
                   ["vcs" "push"]]
 
   :aliases
-  {"outdated" ["run" "-m" "antq.core"]
-   "integration-test" ["with-profile" "1.9:1.10:1.10.1"
+  {"integration-test" ["with-profile" "1.9:1.10:1.10.1"
                        "run" "-m" "integration-test"]
    "test-all" ["do" ["with-profile" "1.9:1.10:1.10.1" "test"] ["integration-test"]]})
