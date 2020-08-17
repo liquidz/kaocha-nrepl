@@ -21,7 +21,7 @@ deploy:
 	lein with-profile +release deploy clojars
 
 outdated:
-	lein with-profile +antq run -m antq.core
+	lein with-profile +antq run -m antq.core --exclude nrepl/nrepl
 
 clean:
 	lein clean
