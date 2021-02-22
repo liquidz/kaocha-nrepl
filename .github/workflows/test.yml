@@ -5,15 +5,16 @@ jobs:
   build:
     strategy:
       matrix:
-        clojure: [openjdk-8-lein, openjdk-11-lein]
+        java: ['8', '11', '14', '15']
     runs-on: ubuntu-latest
-    container:
-      image: clojure:${{ matrix.clojure }}
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.java }}
+      - run: java -version
       - uses: actions/cache@v2
         with:
           path: /root/.m2
           key: v1-m2-${{ hashFiles('project.clj') }}
-      - run: lein deps
-      - run: lein test-all
+      - run: make test
