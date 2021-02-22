@@ -1,6 +1,6 @@
 .PHONY: repl test coverage install release deploy outdated clean
 
-VERSION := 1.10.1
+VERSION := 1.10.2
 
 repl:
 	iced repl with-profile $(VERSION)
@@ -21,7 +21,7 @@ deploy:
 	lein with-profile +release deploy clojars
 
 outdated:
-	lein with-profile +antq run -m antq.core --exclude nrepl/nrepl
+	lein with-profile +antq run -m antq.core --exclude nrepl/nrepl --upgrade
 
 clean:
 	lein clean
